@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Image } from 'react-native';
+import { Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import logo from '../../assets/logo.png';
 import loadingGIF from '../../assets/loading.gif';
 import Background from '../../components/Background';
@@ -25,50 +25,52 @@ export default function SignIn() {
     <Background>
       <Container>
         {!loading ? (
-          <>
-            <Image source={logo} />
+          <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+            <>
+              <Image source={logo} />
 
-            <Form>
-              <FormInput
-                icon="lock"
-                keyBoardType="number"
-                autoCorrect={false}
-                autoCaptalize="none"
-                placeholder="Digite seu Codigo Mobile"
-                returnKeyType="next"
-                onSubmitEditing={() => userRef.current.focus()}
-                value={codMobile}
-                onChangeText={setCodMobile}
-              />
+              <Form>
+                <FormInput
+                  icon="lock"
+                  keyboardType="numeric"
+                  autoCorrect={false}
+                  autoCaptalize="none"
+                  placeholder="Digite seu Codigo Mobile"
+                  returnKeyType="next"
+                  onSubmitEditing={() => userRef.current.focus()}
+                  value={codMobile}
+                  onChangeText={setCodMobile}
+                />
 
-              <FormInput
-                icon="person"
-                keyBoardType="number"
-                autoCorrect={false}
-                autoCaptalize="none"
-                placeholder="Digite seu Usuario"
-                returnKeyType="next"
-                onSubmitEditing={() => passwordRef.current.focus()}
-                value={user}
-                onChangeText={setUser}
-                ref={userRef}
-              />
+                <FormInput
+                  icon="person"
+                  keyboardType="numeric"
+                  autoCorrect={false}
+                  autoCaptalize="none"
+                  placeholder="Digite seu Usuario"
+                  returnKeyType="next"
+                  onSubmitEditing={() => passwordRef.current.focus()}
+                  value={user}
+                  onChangeText={setUser}
+                  ref={userRef}
+                />
 
-              <FormInput
-                icon="lock-outline"
-                secureTextEntry
-                placeholder="Sua Senha Secreta"
-                ref={passwordRef}
-                returnKeyType="send"
-                onSubmitEditing={handleSubmit}
-                value={password}
-                onChangeText={setPassword}
-              />
-              <SubmitButton loading={loading} onPress={handleSubmit}>
-                Acessar
-              </SubmitButton>
-            </Form>
-          </>
+                <FormInput
+                  icon="lock-outline"
+                  secureTextEntry
+                  placeholder="Sua Senha Secreta"
+                  ref={passwordRef}
+                  returnKeyType="send"
+                  onSubmitEditing={handleSubmit}
+                  value={password}
+                  onChangeText={setPassword}
+                />
+                <SubmitButton loading={loading} onPress={handleSubmit}>
+                  Acessar
+                </SubmitButton>
+              </Form>
+            </>
+          </TouchableWithoutFeedback>
         ) : (
           <Image source={loadingGIF} />
         )}

@@ -2,7 +2,6 @@ import { takeLatest, call, put, all, delay } from 'redux-saga/effects';
 import { Alert } from 'react-native';
 import api from '../../../services/api';
 import { signInSucess, signFailure } from './actions';
-// import history from '~/services/history';
 
 export function* signIn({ payload }) {
   try {
@@ -14,15 +13,18 @@ export function* signIn({ payload }) {
       dfsDb: codMobile,
     });
 
-    console.tron.log(response.data);
-    Alert.alert('Usuário Autenticado!');
+    const { u, s, c, d, o } = response.data;
 
-    // const { token, user } = response.data;
-    // if (user.provider) {
-    //   Alert.alert('Utilize o app Mobile');
-    //   return;
-    // }
+    const apiURL = `sgrv2_api/auth?u=${u}&s=${s}&c=${c}&d=${d}&o=${o}&t=u`;
 
+    const authResponse = yield call(api.post, apiURL);
+
+    console.tron.log(authResponse.data);
+
+    const { session_id } = authResponse.data.user.session;
+    const { _token } = authResponse.data.user.token;
+
+    Alert.alert(`Bem Vindo Sr(a). ${authResponse.data.user.session.user_nome}`);
     // api.defaults.headers.Authorization = `Bearer ${token}`;
 
     // yield delay(1500);
