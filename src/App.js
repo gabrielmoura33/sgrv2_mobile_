@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import createRouter from './routes';
 
 // import { Container } from './styles';
 
 export default function App() {
-  // const signed = useSelector((state) => state.auth.signed);
-  const signed = false;
+  const signed = useSelector((state) => state.auth.signed);
 
   return createRouter(signed);
 }

@@ -1,4 +1,5 @@
-import { takeLatest, call, put, all, delay } from 'redux-saga/effects';
+/* eslint-disable camelcase */
+import { takeLatest, call, put, all } from 'redux-saga/effects';
 import { Alert } from 'react-native';
 import api from '../../../services/api';
 import { signInSucess, signFailure } from './actions';
@@ -10,7 +11,7 @@ export function* signIn({ payload }) {
       key: 'ceaefdca3a5fe61fd32224563577d180',
       dfsCpf: user,
       dfsSenha: password,
-      dfsDb: codMobile,
+      dfsDb: 'sgrv2_desenvolvimento',
     });
 
     const { u, s, c, d, o } = response.data;
@@ -19,18 +20,27 @@ export function* signIn({ payload }) {
 
     const authResponse = yield call(api.post, apiURL);
 
-    console.tron.log(authResponse.data);
+    const { user: authenticatedUser } = authResponse.data;
 
-    const { session_id } = authResponse.data.user.session;
-    const { _token } = authResponse.data.user.token;
+    const { session_id } = authenticatedUser.session;
+
+    const tokenResponse = yield call(api.get, '/sgrv2_api/solicitaToken', {
+      headers: {
+        Authorization: session_id,
+      },
+    });
+
+    const { _token } = tokenResponse.data;
+    console.tron.log(_token);
+
+    api.defaults.headers = {
+      Authorization: session_id,
+      'X-Auth-Token': _token,
+    };
+
+    yield put(signInSucess(_token, user, session_id));
 
     Alert.alert(`Bem Vindo Sr(a). ${authResponse.data.user.session.user_nome}`);
-    // api.defaults.headers.Authorization = `Bearer ${token}`;
-
-    // yield delay(1500);
-    // yield put(signInSucess(token, user));
-
-    // history.push('/dashboard');
   } catch (err) {
     Alert.alert('Falha na autenticação, Verifique seus dados');
     yield put(signFailure());
@@ -41,9 +51,12 @@ export function setToken({ payload }) {
   if (!payload) {
     return;
   }
-  const { token } = payload.auth;
-  if (token) {
-    api.defaults.headers.Authorization = `${token}`;
+  const { _token, session_id } = payload.auth;
+  if (_token) {
+    api.defaults.headers = {
+      Authorization: session_id,
+      'X-Auth-Token': _token,
+    };
   }
 }
 export function signOut() {

@@ -22,16 +22,15 @@ export default function SignIn() {
     dispatch(signInRequest(codMobile, user, password));
   }
   return (
-    <Background>
-      <Container>
-        {!loading ? (
-          <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <Background>
+        <Container>
+          {!loading ? (
             <>
               <Image source={logo} />
-
               <Form>
                 <FormInput
-                  icon="lock"
+                  icon="security"
                   keyboardType="numeric"
                   autoCorrect={false}
                   autoCaptalize="none"
@@ -56,7 +55,7 @@ export default function SignIn() {
                 />
 
                 <FormInput
-                  icon="lock-outline"
+                  icon="lock"
                   secureTextEntry
                   placeholder="Sua Senha Secreta"
                   ref={passwordRef}
@@ -70,11 +69,11 @@ export default function SignIn() {
                 </SubmitButton>
               </Form>
             </>
-          </TouchableWithoutFeedback>
-        ) : (
-          <Image source={loadingGIF} />
-        )}
-      </Container>
-    </Background>
+          ) : (
+            <Image source={loadingGIF} />
+          )}
+        </Container>
+      </Background>
+    </TouchableWithoutFeedback>
   );
 }

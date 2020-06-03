@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export function signInRequest(codMobile, user, password) {
   return {
     type: '@auth/SIGN_IN_REQUEST',
@@ -5,10 +6,10 @@ export function signInRequest(codMobile, user, password) {
   };
 }
 
-export function signInSucess(token, user) {
+export function signInSucess(token, user, session_id) {
   return {
     type: '@auth/SIGN_IN_SUCESS',
-    payload: { token, user },
+    payload: { token, user, session_id },
   };
 }
 
