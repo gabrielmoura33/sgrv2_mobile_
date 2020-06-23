@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { Platform, Image } from 'react-native';
 import styled from 'styled-components/native';
 
 import Input from '../../components/Input';
@@ -12,6 +12,10 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+`;
+
+export const Img = styled(Image)`
+    margin-bottom: 80px;
 `;
 
 export const Form = styled.View`
