@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
-import React, { useRef, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
-import logo from '../../assets/logo.png';
+import React, {useRef, useState} from 'react';
+import {useDispatch} from 'react-redux';
+import {TouchableWithoutFeedback, Keyboard, Image, StatusBar} from 'react-native';
+import logo from '../../assets/logo-cor.png';
+import iphoneIcon from '../../assets/iphone.svg';
 import loadingGIF from '../../assets/loading.gif';
 import Background from '../../components/Background';
-import { Container, Form, FormInput, SubmitButton } from './styles';
-import { signInRequest } from '../../store/modules/auth/actions';
+import {Container, Form, FormInput, SubmitButton, Img} from './styles';
+import {signInRequest} from '../../store/modules/auth/actions';
+
 
 export default function SignIn() {
   const dispatch = useDispatch();
@@ -22,20 +24,21 @@ export default function SignIn() {
     dispatch(signInRequest(codMobile, user, password));
   }
   return (
+    
     <Background>
+      <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <Container>
         {!loading ? (
-          <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
             <>
-              <Image source={logo} />
+              <Img source={logo} />
 
               <Form>
                 <FormInput
-                  icon="lock"
+                  icon="phone-iphone"
                   keyboardType="numeric"
                   autoCorrect={false}
                   autoCaptalize="none"
-                  placeholder="Digite seu Codigo Mobile"
+                  placeholder="Código Mobile"
                   returnKeyType="next"
                   onSubmitEditing={() => userRef.current.focus()}
                   value={codMobile}
@@ -47,7 +50,7 @@ export default function SignIn() {
                   keyboardType="numeric"
                   autoCorrect={false}
                   autoCaptalize="none"
-                  placeholder="Digite seu Usuario"
+                  placeholder="Login"
                   returnKeyType="next"
                   onSubmitEditing={() => passwordRef.current.focus()}
                   value={user}
@@ -56,9 +59,9 @@ export default function SignIn() {
                 />
 
                 <FormInput
-                  icon="lock-outline"
+                  icon="vpn-key"
                   secureTextEntry
-                  placeholder="Sua Senha Secreta"
+                  placeholder="Senha"
                   ref={passwordRef}
                   returnKeyType="send"
                   onSubmitEditing={handleSubmit}
@@ -70,11 +73,12 @@ export default function SignIn() {
                 </SubmitButton>
               </Form>
             </>
-          </TouchableWithoutFeedback>
+          
         ) : (
           <Image source={loadingGIF} />
         )}
       </Container>
+      </TouchableWithoutFeedback>
     </Background>
   );
 }

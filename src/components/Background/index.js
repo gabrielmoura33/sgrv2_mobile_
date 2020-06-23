@@ -1,8 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-export default styled(LinearGradient).attrs({
-  colors: ['#81b9cd', '#1b396a'],
-})`
+export default styled.View`
   flex: 1;
+  background-color: #AECFE2;
 `;
