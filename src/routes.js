@@ -4,8 +4,6 @@ import { View } from 'react-native';
 // import Icon from 'react-native-vector-icons/MaterialIcons';
 import React from 'react';
 import SignIn from './pages/SignIn';
-import Home from './pages/Home';
-// import SignUp from './pages/SignUp';
 // import Dashboard from './pages/Dashboard';
 // import Profile from './pages/Profile';
 
@@ -14,8 +12,7 @@ const Stack = createStackNavigator();
 export default function Routes(isSigned = false) {
   return !isSigned ? (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="SignIn" component={Home} />
-      {/* <Stack.Screen name="SignUp" component={SignUp} /> */}
+      <Stack.Screen name="SignIn" component={SignIn} />
     </Stack.Navigator>
   ) : (
     <View />
