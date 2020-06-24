@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React, {useRef, useState} from 'react';
 import {useDispatch} from 'react-redux';
-import {TouchableWithoutFeedback, Keyboard, Image, StatusBar} from 'react-native';
+import {TouchableWithoutFeedback, Keyboard, Image, StatusBar, View} from 'react-native';
 import logo from '../../assets/logo-cor.png';
 import iphoneIcon from '../../assets/iphone.svg';
-import loadingGIF from '../../assets/loading.gif';
+import loadingGIF from '../../assets/logo.gif';
 import Background from '../../components/Background';
 import {Container, Form, FormInput, SubmitButton, Img} from './styles';
 import {signInRequest} from '../../store/modules/auth/actions';
@@ -15,7 +15,7 @@ export default function SignIn() {
   const userRef = useRef();
   const passwordRef = useRef();
   // const loading = useSelector((state) => state.auth.loading);
-  const loading = false;
+  const loading = true;
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const [codMobile, setCodMobile] = useState('');
@@ -24,7 +24,6 @@ export default function SignIn() {
     dispatch(signInRequest(codMobile, user, password));
   }
   return (
-<<<<<<< HEAD
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <Background>
         <Container>
@@ -34,19 +33,6 @@ export default function SignIn() {
               <Form>
                 <FormInput
                   icon="security"
-=======
-    
-    <Background>
-      <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-      <Container>
-        {!loading ? (
-            <>
-              <Img source={logo} />
-
-              <Form>
-                <FormInput
-                  icon="phone-iphone"
->>>>>>> 7c280fe6aa42f66a0d60781eb2a31fd1d581940a
                   keyboardType="numeric"
                   autoCorrect={false}
                   autoCaptalize="none"
@@ -71,11 +57,7 @@ export default function SignIn() {
                 />
 
                 <FormInput
-<<<<<<< HEAD
                   icon="lock"
-=======
-                  icon="vpn-key"
->>>>>>> 7c280fe6aa42f66a0d60781eb2a31fd1d581940a
                   secureTextEntry
                   placeholder="Senha"
                   ref={passwordRef}
@@ -89,21 +71,13 @@ export default function SignIn() {
                 </SubmitButton>
               </Form>
             </>
-<<<<<<< HEAD
           ) : (
-            <Image source={loadingGIF} />
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <Image source={loadingGIF} style={{width: 120, height: 120}} />
+            </View>
           )}
         </Container>
       </Background>
     </TouchableWithoutFeedback>
-=======
-          
-        ) : (
-          <Image source={loadingGIF} />
-        )}
-      </Container>
-      </TouchableWithoutFeedback>
-    </Background>
->>>>>>> 7c280fe6aa42f66a0d60781eb2a31fd1d581940a
   );
 }

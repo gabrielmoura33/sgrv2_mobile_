@@ -20,27 +20,22 @@ export function* signIn({ payload }) {
 
     const authResponse = yield call(api.post, apiURL);
 
+    console.tron.log(authResponse.data);
     const { user: authenticatedUser } = authResponse.data;
 
-    const { session_id } = authenticatedUser.session;
+    // const { _session, _token } = authenticatedUser.token;
 
-    const tokenResponse = yield call(api.get, '/sgrv2_api/solicitaToken', {
-      headers: {
-        Authorization: session_id,
-      },
-    });
+    // console.tron.log(_session);
+    // console.tron.log(_token);
 
-    const { _token } = tokenResponse.data;
-    console.tron.log(_token);
+    // api.defaults.headers = {
+    //   Authorization: _session,
+    //   'X-Auth-Token': _token,
+    // };
 
-    api.defaults.headers = {
-      Authorization: session_id,
-      'X-Auth-Token': _token,
-    };
+    // yield put(signInSucess(_token, user, _session));
 
-    yield put(signInSucess(_token, user, session_id));
-
-    Alert.alert(`Bem Vindo Sr(a). ${authResponse.data.user.session.user_nome}`);
+    // Alert.alert(`Bem Vindo Sr(a). ${authResponse.data.user.session.user_nome}`);
   } catch (err) {
     Alert.alert('Falha na autenticação, Verifique seus dados');
     yield put(signFailure());
@@ -51,7 +46,7 @@ export function setToken({ payload }) {
   if (!payload) {
     return;
   }
-  const { _token, session_id } = payload.auth;
+  const { 'X-Auth-Token': _token, Authorization: session_id } = payload.auth;
   if (_token) {
     api.defaults.headers = {
       Authorization: session_id,

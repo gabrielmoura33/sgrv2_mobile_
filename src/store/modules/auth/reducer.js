@@ -1,10 +1,10 @@
 import produce from 'immer';
 
 const INITIAL_STATE = {
-  token: null,
+  'X-Auth-Token': null,
   signed: false,
   loading: false,
-  session_id: null,
+  Authorization: null,
 };
 
 export default function auth(state = INITIAL_STATE, action) {
@@ -15,10 +15,10 @@ export default function auth(state = INITIAL_STATE, action) {
         break;
       }
       case '@auth/SIGN_IN_SUCESS': {
-        draft.token = action.payload.token;
+        draft["X-Auth-Token"] = action.payload.token;
         draft.signed = true;
         draft.loading = false;
-        draft.session_id = action.payload.session_id;
+        draft.Authorization = action.payload.session_id;
         break;
       }
       case '@auth/SIGN_IN_FAILURE': {
