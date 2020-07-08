@@ -53,7 +53,6 @@ export default function SignIn() {
                   onSubmitEditing={() => passwordRef.current.focus()}
                   value={user}
                   onChangeText={setUser}
-                  ref={userRef}
                 />
 
                 <FormInput

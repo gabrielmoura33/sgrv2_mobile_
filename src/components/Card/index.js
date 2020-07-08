@@ -1,6 +1,8 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { AntDesign } from '@expo/vector-icons';
+import Barcode from 'react-native-barcode-expo';
+
 import {
   Card,
   CardHeader,
@@ -23,9 +25,7 @@ export default function Main({ valor, dataEmissao }) {
         <Description> R$ {valor} </Description>
       </CardContent>
       <CardFooter>
-        <Annotation>
-          TED de R$ 40,00 recebida de Hinova Soluções Digitais hoje às 18:00h.
-        </Annotation>
+        <Barcode value="Hello World" height={50} format="CODE128" />
       </CardFooter>
     </Card>
   );

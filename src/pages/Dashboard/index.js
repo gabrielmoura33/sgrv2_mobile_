@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
-import { FlatList } from 'react-native';
-import { Container } from './styles';
+import { Container, LogoContainer, Logo, ContentContainer, ClientName } from './styles';
 import Api from '../../services/api';
+
 // Components
 import Card from '../../components/Card';
 import AuthenticatedBackground from '../../components/AuthenticadedBackground';
 
+// Assets
+import logoSrc from '../../assets/logo-cor.png';
 function Dashboard() {
   // useEffect(() => {
   //   async function loadBoleto() {
@@ -34,13 +36,13 @@ function Dashboard() {
   return (
     <AuthenticatedBackground>
       <Container>
-        <FlatList
-          horizontal
-          keyExtractor={(item) => String(item)}
-          data={[1, 2, 3, 4]}
-          renderItem={() => renderCard(data)}
-          showsHorizontalScrollIndicator={false}
-        />
+        <LogoContainer>
+          <Logo source={logoSrc}/>
+        </LogoContainer>
+        <ContentContainer>
+          <ClientName>Gabriel de Moura e Souza</ClientName>
+          <Card />
+        </ContentContainer>
       </Container>
     </AuthenticatedBackground>
   );
