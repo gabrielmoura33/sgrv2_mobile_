@@ -15,7 +15,7 @@ export default function SignIn() {
   const userRef = useRef();
   const passwordRef = useRef();
   // const loading = useSelector((state) => state.auth.loading);
-  const loading = true;
+  const loading = false;
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const [codMobile, setCodMobile] = useState('');

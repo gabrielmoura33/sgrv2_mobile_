@@ -2,16 +2,18 @@ import styled from 'styled-components/native';
 
 export const CardList = styled.View`
   height: 300px;
+  margin: 0 30px;
 `;
 
 export const Content = styled.View``;
 export const Card = styled.View`
   flex: 1;
-  background: #fff;
-  border-radius: 4px;
-  margin: 0 20px;
-  width: 280px;
-  height: 350px;
+  background: #FFFEFE;
+  border-radius: 12px;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 290px;
+  height: 420px;
 `;
 export const CardHeader = styled.View`
   flex-direction: row;

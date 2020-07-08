@@ -23,17 +23,17 @@ export function* signIn({ payload }) {
     console.tron.log(authResponse.data);
     const { user: authenticatedUser } = authResponse.data;
 
-    // const { _session, _token } = authenticatedUser.token;
+    const { _session, _token } = authenticatedUser.token;
 
     // console.tron.log(_session);
     // console.tron.log(_token);
 
-    // api.defaults.headers = {
-    //   Authorization: _session,
-    //   'X-Auth-Token': _token,
-    // };
+    api.defaults.headers = {
+      Authorization: _session,
+      'X-Auth-Token': _token,
+    };
 
-    // yield put(signInSucess(_token, user, _session));
+    yield put(signInSucess(_token, user, _session));
 
     // Alert.alert(`Bem Vindo Sr(a). ${authResponse.data.user.session.user_nome}`);
   } catch (err) {
