@@ -6,15 +6,9 @@ export const CardList = styled.View`
 `;
 
 export const Content = styled.View``;
-export const Card = styled.TouchableOpacity`
-  flex: 1;
-  background: #FFFEFE;
-  border-radius: 12px;
-  margin: 0 10px;
-  width: 120%;
-  max-width: 330px;
-  height: 420px;
-`;
+
+export const Card = styled.View``;
+
 export const CardHeader = styled.View`
   flex-direction: row;
   justify-content: space-between;
@@ -22,8 +16,7 @@ export const CardHeader = styled.View`
   padding: 30px;
 `;
 export const CardContent = styled.View`
-  margin-top: 160px;
-  flex: 1;
+  margin-top: 100px;
   padding: 0 20px;
   justify-content: center;
 `;
@@ -41,8 +34,6 @@ export const Description = styled.Text.attrs({
 export const CardFooter = styled.View`
   border-top-width: 1px;
   border-top-color: #EEE;
-  border-radius: 12px;
-  height: 80px;
 `;
 export const Annotation = styled.Text`
   font-size: 13px;

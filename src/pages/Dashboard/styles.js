@@ -25,3 +25,13 @@ export const ClientName = styled.Text`
   font-size: 18px;
   margin-bottom: 20px;
 `;
+
+export const CardContainer = styled.TouchableOpacity`
+  flex: 1;
+  background: #FFFEFE;
+  margin: 0 10px;
+  width: 120%;
+  max-width: 330px;
+  height: 325px;
+  box-shadow: 10px 5px 5px rgba(000, 000, 000, 0.1);
+`;

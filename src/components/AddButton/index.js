@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, TouchableHighlight, Animated } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight, Animated,TouchableOpacity } from 'react-native';
 import {  FontAwesome5, Feather,  } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { FontAwesome } from '@expo/vector-icons'; 
@@ -12,7 +12,7 @@ const AddButton = ({color}) => {
     Animated.sequence([
       Animated.timing(buttonSize, {
         toValue: 0.95,
-        duration: 200
+        duration: 50
       }),
       Animated.timing(buttonSize, {
         toValue: 1
@@ -56,19 +56,25 @@ const AddButton = ({color}) => {
   return ( 
     <View style={{position: 'absolute', alignItems: 'center'}} >
       <Animated.View style={{position: 'absolute', left: thermometerX, top: thermometerY }}>
-        <View style={styles.secondaryButton}>
-            <Feather name="thermometer" size={24} color="#FFF" />
-        </View>
+        <TouchableOpacity>
+          <View style={styles.secondaryButton}>
+              <Feather name="thermometer" size={24} color="#FFF" />
+          </View>
+        </TouchableOpacity>
       </Animated.View>
       <Animated.View style={{position: 'absolute', left: timeX, top: timeY }}>
-        <View style={styles.secondaryButton}>
-            <MaterialCommunityIcons name="car" size={24} color="#FFF" />
-        </View>
+        <TouchableOpacity>
+          <View style={styles.secondaryButton}>
+              <MaterialCommunityIcons name="car" size={24} color="#FFF" />
+          </View>
+        </TouchableOpacity>
       </Animated.View>
       <Animated.View style={{position: 'absolute', left: pulseX, top: pulseY }}>
-        <View style={styles.secondaryButton}>
-        <MaterialCommunityIcons name="logout" size={24} color={color} />        
-        </View>
+        <TouchableOpacity>
+          <View style={styles.secondaryButton}>
+            <MaterialCommunityIcons name="logout" size={24} color={color} />        
+          </View>
+        </TouchableOpacity>
       </Animated.View>
       <Animated.View style={[styles.button, sizeStye]}>
         <TouchableHighlight onPress={handlePress} underlayColor="#3377B6">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Container, LogoContainer, Logo, ContentContainer, ClientName } from './styles';
+import { TouchableOpacity } from 'react-native';
+import { Container, LogoContainer, Logo, ContentContainer, ClientName, CardContainer } from './styles';
 import Api from '../../services/api';
 
 // Components
@@ -8,7 +9,7 @@ import AuthenticatedBackground from '../../components/AuthenticadedBackground';
 
 // Assets
 import logoSrc from '../../assets/logo-cor.png';
-function Dashboard() {
+function Dashboard({navigation}) {
   // useEffect(() => {
   //   async function loadBoleto() {
   //     // console.tron.log('hello World')
@@ -41,7 +42,9 @@ function Dashboard() {
         </LogoContainer>
         <ContentContainer>
           <ClientName>Gabriel de Moura e Souza</ClientName>
-          <Card />
+          <CardContainer onPress={() => navigation.navigate('Billet', { screen: 'Billet' })}>
+            <Card valor="1300,00"/>
+          </CardContainer>
         </ContentContainer>
       </Container>
     </AuthenticatedBackground>

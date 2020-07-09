@@ -11,7 +11,8 @@ import {
   Description,
   CardFooter,
   Annotation,
-} from './styles';
+} from './styles';          
+
 
 export default function Main({ valor, dataEmissao }) {
   return (
@@ -25,7 +26,7 @@ export default function Main({ valor, dataEmissao }) {
         <Description> R$ {valor} </Description>
       </CardContent>
       <CardFooter>
-        <Barcode value="Hello World" height={50} format="CODE128" />
+        <Barcode value="Hello World" height={50} width={1} format="CODE128" />
       </CardFooter>
     </Card>
   );
