@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Container, LogoContainer, Logo, ContentContainer, ClientName, CardContainer } from './styles';
 import Api from '../../services/api';
+import CreditCard from 'react-native-credit-card';
 
 // Components
 import Card from '../../components/Card';
@@ -46,6 +47,7 @@ function Dashboard({navigation}) {
             <Card valor="1300,00"/>
           </CardContainer>
         </ContentContainer>
+        <CreditCard />
       </Container>
     </AuthenticatedBackground>
   );

@@ -34,4 +34,6 @@ export const CardContainer = styled.TouchableOpacity`
   max-width: 330px;
   height: 325px;
   box-shadow: 10px 5px 5px rgba(000, 000, 000, 0.1);
+  border-radius: 12px;
+
 `;

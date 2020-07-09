@@ -34,6 +34,7 @@ export const Description = styled.Text.attrs({
 export const CardFooter = styled.View`
   border-top-width: 1px;
   border-top-color: #EEE;
+  border-radius: 12px;
 `;
 export const Annotation = styled.Text`
   font-size: 13px;
