@@ -34,7 +34,9 @@ function Dashboard({ navigation }) {
 
   //   loadBoleto();
   // }, []);
-
+  const renderCard = ({ valor, dataEmissao }) => (
+    <Card valor={valor} dataEmissao={dataEmissao} navigation={navigation} />
+  );
   return (
     <AuthenticatedBackground>
       <Container>
