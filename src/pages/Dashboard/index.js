@@ -1,4 +1,5 @@
 import React from 'react';
+import { CardView } from 'rn-credit-card-view';
 import {
   Container,
   LogoContainer,
