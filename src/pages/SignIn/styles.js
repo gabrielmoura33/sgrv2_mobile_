@@ -1,5 +1,6 @@
-import { Platform, Image } from 'react-native';
 import styled from 'styled-components/native';
+// eslint-disable-next-line import/no-unresolved
+import { Platform, Image } from 'react-native';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';

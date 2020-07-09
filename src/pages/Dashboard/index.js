@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react';
-import { TouchableOpacity } from 'react-native';
-import { Container, LogoContainer, Logo, ContentContainer, ClientName, CardContainer } from './styles';
-import Api from '../../services/api';
-import CreditCard from 'react-native-credit-card';
+import React from 'react';
+import {
+  Container,
+  LogoContainer,
+  Logo,
+  ContentContainer,
+  ClientName,
+  CardContainer,
+} from './styles';
 
 // Components
 import Card from '../../components/Card';
@@ -10,7 +14,8 @@ import AuthenticatedBackground from '../../components/AuthenticadedBackground';
 
 // Assets
 import logoSrc from '../../assets/logo-cor.png';
-function Dashboard({navigation}) {
+
+function Dashboard({ navigation }) {
   // useEffect(() => {
   //   async function loadBoleto() {
   //     // console.tron.log('hello World')
@@ -27,27 +32,21 @@ function Dashboard({navigation}) {
 
   //   loadBoleto();
   // }, []);
-  const renderCard = ({ valor, dataEmissao }) => {
-    return <Card valor={valor} dataEmissao={dataEmissao} />;
-  };
 
-  const data = {
-    valor: 12000,
-    dataEmissao: '12/06/2019',
-  };
   return (
     <AuthenticatedBackground>
       <Container>
         <LogoContainer>
-          <Logo source={logoSrc}/>
+          <Logo source={logoSrc} />
         </LogoContainer>
         <ContentContainer>
           <ClientName>Gabriel de Moura e Souza</ClientName>
-          <CardContainer onPress={() => navigation.navigate('Billet', { screen: 'Billet' })}>
-            <Card valor="1300,00"/>
+          <CardContainer
+            onPress={() => navigation.navigate('Billet', { screen: 'Billet' })}
+          >
+            <Card valor="1300,00" />
           </CardContainer>
         </ContentContainer>
-        <CreditCard />
       </Container>
     </AuthenticatedBackground>
   );
