@@ -1,4 +1,5 @@
 import React from 'react';
+import { FlatList } from 'react-native';
 import { CardView } from 'rn-credit-card-view';
 import {
   Container,
@@ -47,6 +48,13 @@ function Dashboard({ navigation }) {
           >
             <Card valor="1300,00" />
           </CardContainer>
+          <FlatList
+            horizontal
+            keyExtractor={(item) => String(item)}
+            data={[1, 2, 3, 4]}
+            renderItem={() => renderCard(data)}
+            showsHorizontalScrollIndicator={false}
+          />
         </ContentContainer>
       </Container>
     </AuthenticatedBackground>
