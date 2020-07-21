@@ -39,7 +39,7 @@ const HinovaPayments = () => {
             ref={creditCardRef}
             bgColor="#3b3d3e"
             scale={0.9}
-            brand="visa"
+            brand="master-card"
             number={number}
             name={name}
             focused={cvvFocused ? 'cvc' : ''}
