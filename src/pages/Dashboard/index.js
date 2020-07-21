@@ -1,19 +1,21 @@
 import React from 'react';
-import { FlatList } from 'react-native';
-import { CardView } from 'rn-credit-card-view';
+import { View } from 'react-native';
+// import { CardView } from 'react-native-credit-card-input';
+import { CardView } from 'react-native-credit-card-input';
 import {
   Container,
   LogoContainer,
   Logo,
   ContentContainer,
   ClientName,
-  CardContainer,
+  BackgroundContainer,
+  BilletList,
+  CreditCardContainer,
+  CreditCardList,
 } from './styles';
-
 // Components
 import Card from '../../components/Card';
 import AuthenticatedBackground from '../../components/AuthenticadedBackground';
-
 // Assets
 import logoSrc from '../../assets/logo-cor.png';
 
@@ -34,9 +36,25 @@ function Dashboard({ navigation }) {
 
   //   loadBoleto();
   // }, []);
-  const renderCard = ({ valor, dataEmissao }) => (
-    <Card valor={valor} dataEmissao={dataEmissao} navigation={navigation} />
-  );
+
+  function renderBillet() {
+    return (
+      <Card valor="1300,00" />
+    );
+  }
+
+  function renderCreditCard() {
+    return (
+      <View style={{ marginLeft: 10 }}>
+        <CardView
+          flip
+          bgColor="#3b3d3e"
+          scale={0.9}
+          brand="visa"
+        />
+      </View>
+    );
+  }
   return (
     <AuthenticatedBackground>
       <Container>
@@ -45,19 +63,20 @@ function Dashboard({ navigation }) {
         </LogoContainer>
         <ContentContainer>
           <ClientName>Gabriel de Moura e Souza</ClientName>
-          <CardContainer
-            onPress={() => navigation.navigate('Billet', { screen: 'Billet' })}
-          >
-            <Card valor="1300,00" />
-          </CardContainer>
-          <FlatList
-            horizontal
-            keyExtractor={(item) => String(item)}
+          <BilletList
             data={[1, 2, 3, 4]}
-            renderItem={() => renderCard(data)}
+            renderItem={renderBillet}
+            horizontal
             showsHorizontalScrollIndicator={false}
           />
         </ContentContainer>
+        <BackgroundContainer />
+        <CreditCardContainer />
+        <CreditCardList
+          data={[0, 1, 2, 3]}
+          horizontal
+          renderItem={renderCreditCard}
+        />
       </Container>
     </AuthenticatedBackground>
   );

@@ -15,7 +15,7 @@ export default function auth(state = INITIAL_STATE, action) {
         break;
       }
       case '@auth/SIGN_IN_SUCESS': {
-        draft["X-Auth-Token"] = action.payload.token;
+        draft['X-Auth-Token'] = action.payload.token;
         draft.signed = true;
         draft.loading = false;
         draft.Authorization = action.payload.session_id;

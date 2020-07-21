@@ -40,3 +40,15 @@ export const Annotation = styled.Text`
   font-size: 13px;
   color: #333;
 `;
+
+export const CardContainer = styled.TouchableOpacity`
+  flex: 1;
+  background: #FFFEFE;
+  margin: 0 10px;
+  width: 100%;
+  width: 250px;
+  height: 325px;
+  box-shadow: 10px 5px 5px rgba(000, 000, 000, 0.1);
+  border-radius: 12px;
+  align-items: center;
+`;

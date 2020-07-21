@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Background from '../../components/Background';
-import { Container, Text, Content, TextList, TextInfo, Detail, List, Flat } from './styles'
-import { FlatList, ScrollView, TextInput } from 'react-native-gesture-handler';
+import {
+  Container, Text, Content, TextList, TextInfo, Detail, List, Flat,
+} from './styles';
 
-export default function BilletDetail () {
+export default function BilletDetail() {
   const DATA = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -71,52 +72,43 @@ export default function BilletDetail () {
     },
   ];
 
-
-  return(
+  return (
     <>
-    <Background>
-      <Container>
-        <Text>
-        $64.234
-        </Text>
-      </Container>
+      <Background>
+        <Container>
+          <Text>
+            $64.234
+          </Text>
+        </Container>
 
+        <Content>
+          <Detail>Detailed</Detail>
+          <ScrollView>
 
+            <FlatList
+              data={DATA}
+              showsVerticalScrollIndicator={false}
+              renderItem={({ item }) => (
+                <List>
+                  <TextList>{item.value}</TextList>
+                  <TextInfo>{item.title}</TextInfo>
+                </List>
 
-      <Content>
-        <Detail>Detailed</Detail>
-        <ScrollView>
-          
-          <FlatList
-          data={DATA}
-          showsVerticalScrollIndicator={false}
-          renderItem={({item})=>(
-          <List>
-            <TextList>{item.value}</TextList>
-            <TextInfo>{item.title}</TextInfo>
-          </List>
-          
-        )}
-        
-        >
+              )}
+            />
 
-        </FlatList>
-          
-          
           </ScrollView>
-      </Content>
-      
-      <Flat>
-        <FlatList
-        data={DATA2}
-        showsVerticalScrollIndicator={false}
-        renderItem={({item})=><TextInfo>{item.title}</TextInfo>}>
+        </Content>
 
-        </FlatList>
-      </Flat>
-      
-    </Background>
+        <Flat>
+          <FlatList
+            data={DATA2}
+            showsHorizontalScrollIndicator={false}
+            renderItem={({ item }) => <TextInfo>{item.title}</TextInfo>}
+          />
+        </Flat>
+
+      </Background>
     </>
-  )
-  
+  );
 }

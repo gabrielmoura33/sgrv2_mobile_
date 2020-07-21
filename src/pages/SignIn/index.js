@@ -1,14 +1,16 @@
 /* eslint-disable react/prop-types */
-import React, {useRef, useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {TouchableWithoutFeedback, Keyboard, Image, StatusBar, View} from 'react-native';
+import React, { useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import {
+  TouchableWithoutFeedback, Keyboard, Image, View,
+} from 'react-native';
 import logo from '../../assets/logo-cor.png';
-import iphoneIcon from '../../assets/iphone.svg';
 import loadingGIF from '../../assets/logo.gif';
 import Background from '../../components/Background';
-import {Container, Form, FormInput, SubmitButton, Img} from './styles';
-import {signInRequest} from '../../store/modules/auth/actions';
-
+import {
+  Container, Form, FormInput, SubmitButton,
+} from './styles';
+import { signInRequest } from '../../store/modules/auth/actions';
 
 export default function SignIn() {
   const dispatch = useDispatch();
@@ -71,8 +73,8 @@ export default function SignIn() {
               </Form>
             </>
           ) : (
-            <View style={{flex: 1, alignItems: 'center'}}>
-              <Image source={loadingGIF} style={{width: 120, height: 120}} />
+            <View style={{ flex: 1, alignItems: 'center' }}>
+              <Image source={loadingGIF} style={{ width: 120, height: 120 }} />
             </View>
           )}
         </Container>
