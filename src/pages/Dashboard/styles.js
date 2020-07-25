@@ -10,6 +10,18 @@ export const Container = styled.ScrollView.attrs({
   margin-top: 60px;
 `;
 
+export const LoadingContainer = styled.SafeAreaView`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  
+`;
+
+export const Loading = styled.Image`
+  height: 150px;
+  width: 150px;
+`;
+
 export const LogoContainer = styled.SafeAreaView`
   align-items: center;
   margin-top: 20px;
@@ -30,19 +42,6 @@ export const ClientName = styled.Text`
   margin-bottom: 20px;
 `;
 
-export const CardContainer = styled.TouchableOpacity`
-  flex: 1;
-  background: #FFFEFE;
-  margin: 0 10px;
-  width: 100%;
-  width: 200px;
-  height: 325px;
-  box-shadow: 10px 5px 5px rgba(000, 000, 000, 0.1);
-  border-radius: 12px;
-  align-items: center;
-
-`;
-
 export const BackgroundContainer = styled.View`
   flex: 1;
   position: absolute;
@@ -50,7 +49,7 @@ export const BackgroundContainer = styled.View`
   height: 200px;
   border-radius: 9px;
   justify-content: center;
-  top: 600px;
+  top: 645px;
   left: 0;
   right: 0;
   opacity: 0.7;
@@ -63,12 +62,12 @@ export const CreditCardContainer = styled.View`
   height: 55px;
   border-radius: 9px;
   justify-content: center;
-  top: 600px;
+  top: 800px;
   z-index: 5;
 `;
 
 export const BilletList = styled(FlatList)`
-  width: 290px;
+  width: 300px;
   `;
 
 export const BilletListContainer = styled.View`

@@ -1,9 +1,9 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { AntDesign } from '@expo/vector-icons';
 import Barcode from 'react-native-barcode-expo';
 import { useNavigation } from '@react-navigation/native';
-
+import PropTypes from 'prop-types';
 import {
   Card,
   CardHeader,
@@ -11,11 +11,19 @@ import {
   Title,
   Description,
   CardFooter,
-  Annotation,
+  Type,
   CardContainer,
+  CardClientContainer,
+  CardClienContainerTitle,
+  CardClient,
+  CardInfoContainer,
+  CardInfo,
+  CardInfoTitle,
+  CardInfoText,
 } from './styles';
+import Status from '../Status';
 
-export default function Main({ valor, dataEmissao }) {
+export default function CardBillet({ card }) {
   const navigation = useNavigation();
   return (
     <CardContainer
@@ -23,24 +31,41 @@ export default function Main({ valor, dataEmissao }) {
     >
       <Card>
         <CardHeader>
-          <Icon name="attach-money" size={28} color="#666" />
+          <Type>Carnê</Type>
+          <Status />
           <AntDesign name="pdffile1" size={24} color="black" />
         </CardHeader>
+
+        <CardClientContainer>
+          <CardClienContainerTitle>Beneficiário</CardClienContainerTitle>
+          <CardClient>{card.nome}</CardClient>
+        </CardClientContainer>
+
+        <CardInfoContainer>
+          <CardInfo>
+            <CardInfoTitle>Nosso Número</CardInfoTitle>
+            <CardInfoText>{card.nosso_numero}</CardInfoText>
+          </CardInfo>
+          <CardInfo>
+            <CardInfoTitle>Vencimento</CardInfoTitle>
+            <CardInfoText>{card.data_vencimento}</CardInfoText>
+          </CardInfo>
+        </CardInfoContainer>
         <CardContent>
-          <Title>Valor do Boleto</Title>
+          <Title>Valor</Title>
           <Description>
-            {' '}
-            R$
-            {' '}
-            {valor}
-            {' '}
+            {`R$ ${card.valor}`}
           </Description>
+
         </CardContent>
         <CardFooter>
-          <Barcode value="Hello World" height={50} width={1} format="CODE128" />
+          <Barcode value="Hello World" height={40} width={1} format="CODE128" />
         </CardFooter>
       </Card>
     </CardContainer>
-
   );
 }
+
+CardBillet.propTypes = {
+  card: PropTypes.object.isRequired,
+};

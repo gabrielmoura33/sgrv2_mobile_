@@ -25,6 +25,7 @@
     "react-native-barcode-expo": "^1.1.1",
     "react-native-credit-card-input": "https://github.com/gabrielmoura33/react-native-credit-card-input",
     "react-native-gesture-handler": "~1.6.0",
+    "react-native-masked-text": "^1.13.0",
     "react-native-reanimated": "~1.7.0",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",

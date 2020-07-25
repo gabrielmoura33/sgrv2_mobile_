@@ -55,9 +55,10 @@ export const Flat = styled.View`
   margin-top: 45%;
   left: 0;
   right: 0;
-  padding-left: 30px;
+  padding: 20px 0px 0px 30px;
   /* text-align: center; */
   background: #fFF;
   border-radius: 5px;
-  max-height: 70px;
+  max-height: 60px;
+  justify-content: center;  
 `;

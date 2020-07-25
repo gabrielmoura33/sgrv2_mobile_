@@ -103,7 +103,7 @@ export default function BilletDetail() {
         <Flat>
           <FlatList
             data={DATA2}
-            showsHorizontalScrollIndicator={false}
+            showsVerticalScrollIndicator={false}
             renderItem={({ item }) => <TextInfo>{item.title}</TextInfo>}
           />
         </Flat>

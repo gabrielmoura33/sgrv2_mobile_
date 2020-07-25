@@ -1,8 +1,13 @@
 import styled from 'styled-components/native';
 import { Platform } from 'react-native';
 import Input from '../../components/PaymentsComponents/Input';
+import MaskedInput from '../../components/PaymentsComponents/MaskedInput';
+import Button from '../../components/PaymentsComponents/Button';
 
-export const Container = styled.ScrollView`
+export const Container = styled.ScrollView.attrs({
+  keyboardShouldPersistTaps: 'handled',
+  showVerticalScrollIndicator: false,
+})`
   flex: 1;
   background: #DDE6E9;
   padding: 0 40px;
@@ -49,14 +54,8 @@ export const CreditCardContainer = styled.View`
 
 `;
 
-export const Footer = styled.View`
-  flex: 1;
-
-  background: #3377B6;
-`;
-
 export const FormContainer = styled.KeyboardAvoidingView.attrs({
-  enabled: true,
+  enabled: Platform.OS !== 'ios',
   behavior: 'padding',
 })`
   align-self: stretch;
@@ -66,6 +65,11 @@ export const FormContainer = styled.KeyboardAvoidingView.attrs({
 export const FormInput = styled(Input)`
   margin-bottom: 10px;
 `;
+
+export const FormInputMasked = styled(MaskedInput)`
+    margin-bottom: 10px;
+`;
+
 export const FormInputContainer = styled.View`
   margin-top: 10px;
   flex-direction: row;
@@ -75,4 +79,7 @@ export const FormInputContainer = styled.View`
 export const FormInputLittle = styled(Input)`
   margin-bottom: 10px;
   width: 30%;
+`;
+export const SubmitButton = styled(Button)`
+  margin-top: 10px;
 `;

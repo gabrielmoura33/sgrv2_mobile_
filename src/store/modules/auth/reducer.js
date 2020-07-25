@@ -27,7 +27,8 @@ export default function auth(state = INITIAL_STATE, action) {
       }
       case '@auth/SIGN_OUT': {
         draft.signed = null;
-        draft.token = null;
+        draft['X-Auth-Token'] = null;
+        draft.Authorization = false;
         break;
       }
       default:

@@ -34,7 +34,7 @@ export default function SignIn() {
               <Image source={logo} />
               <Form>
                 <FormInput
-                  icon="security"
+                  icon="phone"
                   keyboardType="numeric"
                   autoCorrect={false}
                   autoCaptalize="none"
