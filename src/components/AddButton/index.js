@@ -102,7 +102,9 @@ const AddButton = ({ color }) => {
       </TouchableOpacity>
 
       <Animated.View style={{ position: 'absolute', left: timeX, top: timeY }}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Vehicles', { screen: 'Vehicles' })}
+        >
           <View style={styles.secondaryButton}>
             <MaterialCommunityIcons name="car" size={24} color="#FFF" />
           </View>

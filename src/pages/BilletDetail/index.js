@@ -1,8 +1,16 @@
 import React from 'react';
-import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Background from '../../components/Background';
 import {
-  Container, Text, Content, TextList, TextInfo, Detail, List, Flat,
+  Container,
+  Value,
+  Content,
+  TextList,
+  TextInfo,
+  Detail,
+  List,
+  Flat,
+  ItemList,
+  FilterList,
 } from './styles';
 
 export default function BilletDetail() {
@@ -76,32 +84,27 @@ export default function BilletDetail() {
     <>
       <Background>
         <Container>
-          <Text>
+          <Value>
             $64.234
-          </Text>
+          </Value>
         </Container>
 
         <Content>
           <Detail>Detailed</Detail>
-          <ScrollView>
-
-            <FlatList
-              data={DATA}
-              showsVerticalScrollIndicator={false}
-              renderItem={({ item }) => (
-                <List>
-                  <TextList>{item.value}</TextList>
-                  <TextInfo>{item.title}</TextInfo>
-                </List>
-
-              )}
-            />
-
-          </ScrollView>
+          <ItemList
+            data={DATA}
+            showsVerticalScrollIndicator={false}
+            renderItem={({ item }) => (
+              <List>
+                <TextList>{item.value}</TextList>
+                <TextInfo>{item.title}</TextInfo>
+              </List>
+            )}
+          />
         </Content>
 
         <Flat>
-          <FlatList
+          <FilterList
             data={DATA2}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => <TextInfo>{item.title}</TextInfo>}

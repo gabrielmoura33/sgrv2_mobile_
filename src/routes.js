@@ -12,6 +12,7 @@ import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
 import Billet from './pages/BilletDetail';
 import HinovaPayments from './pages/HinovaPayments';
+import Vehicles from './pages/Vehicles';
 
 /*
  * Components
@@ -81,6 +82,8 @@ export default function Routes(isSigned = false) {
       <Stack.Screen name="Tab" component={TabNavigator} />
 
       <Stack.Screen name="Payments" component={HinovaPayments} />
+
+      <Stack.Screen name="Vehicles" component={Vehicles} />
 
       <Stack.Screen name="Billet" component={Billet} />
 
