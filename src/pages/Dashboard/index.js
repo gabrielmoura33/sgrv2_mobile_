@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import { CardView } from 'react-native-credit-card-input';

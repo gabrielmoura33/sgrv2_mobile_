@@ -4,6 +4,7 @@ import { CardView } from 'react-native-credit-card-input';
 import { useNavigation } from '@react-navigation/native';
 import { KeyboardAvoidingView, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import crediCardImage from '../../assets/imageBack.png';
 import {
   Container,
   Header,
@@ -61,6 +62,7 @@ const HinovaPayments = () => {
               cvc={cvc}
               focused={cvvFocused ? 'cvc' : ''}
               allowScroll
+              imageBack={crediCardImage}
             />
           </CreditCardContainer>
           <FormContainer>
