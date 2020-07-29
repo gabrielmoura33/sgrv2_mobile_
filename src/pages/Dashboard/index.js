@@ -26,10 +26,13 @@ import loadingSrc from '../../assets/logo.gif';
 
 function Dashboard() {
   const [billetData, setBilletData] = useState([]);
+  const [creditCardData, setCreditCardData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(true);
   const [pageLoading, sePageLoading] = useState(true);
   const [page, setPage] = useState(0);
+  const [pageCreditCard, setPageCreditCard] = useState(0);
+
   const [total, setTotal] = useState(0);
 
   async function loadBillet() {
@@ -45,7 +48,6 @@ function Dashboard() {
     const response = await api.get('area_boleto');
     const { recordsTotal, data } = response.data[0];
     setTotal(recordsTotal);
-    console.tron.log(data.slice((5 * page) + 1, ((5 * page) + 1) + 5));
     setBilletData(page > 1 ? data.slice(0, (page + 1) * 5) : data.slice(0, 5));
     setPage(page + 1);
     sePageLoading(false);
@@ -53,8 +55,28 @@ function Dashboard() {
     setLoading(false);
   }
 
+  async function loadCreditCard() {
+    if (loading) {
+      return;
+    }
+    if (total > 0 && billetData.length === total) {
+      return;
+    }
+
+    setLoading(true);
+
+    const response = await api.get('http://192.168.0.13:3333/area_payments_cartao');
+    const { recordsTotal, data } = response.data[0];
+    setTotal(recordsTotal);
+    setCreditCardData(pageCreditCard > 1 ? data.slice(0, (pageCreditCard + 1) * 5) : data.slice(0, 5));
+    setPageCreditCard(page + 1);
+    setRefreshing(false);
+    setLoading(false);
+  }
+
   useEffect(() => {
     loadBillet();
+    loadCreditCard();
   }, []);
   function handleRefresh() {
     setRefreshing(true);
@@ -68,13 +90,22 @@ function Dashboard() {
     );
   }
 
-  function renderCreditCard() {
+  function renderCreditCard({ item: crediCard }) {
+    const brandRef = {
+      1: 'visa',
+      2: 'master-card',
+      3: 'american-express',
+      33: 'diners-club',
+      41: 'elo',
+    };
     return (
       <View style={{ marginLeft: 10 }}>
         <CardView
           bgColor="#3b3d3e"
           scale={0.9}
-          brand="visa"
+          brand={brandRef[crediCard.bandeira_cartao_id]}
+          number={`•••• •••• •••• ${crediCard.numero_final}`}
+          name={crediCard.cliente_nome}
         />
       </View>
     );
@@ -95,7 +126,7 @@ function Dashboard() {
             <ClientName>Gabriel de Moura e Souza</ClientName>
             <BilletList
               data={billetData}
-              keyExtractor={(item) => String(item.id)}
+              keyExtractor={(item) => item.id}
               renderItem={renderBillet}
               horizontal
               showsHorizontalScrollIndicator={false}
@@ -108,7 +139,8 @@ function Dashboard() {
           <BackgroundContainer />
           <CreditCardContainer />
           <CreditCardList
-            data={[0, 1, 2, 3]}
+            data={creditCardData}
+            keyExtractor={(item) => item.id}
             horizontal
             renderItem={renderCreditCard}
           />
