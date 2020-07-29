@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { Platform } from 'react-native';
+import { TextInputMask } from 'react-native-masked-text';
 import Input from '../../components/PaymentsComponents/Input';
-import MaskedInput from '../../components/PaymentsComponents/MaskedInput';
 import Button from '../../components/PaymentsComponents/Button';
 
 export const Container = styled.ScrollView.attrs({
@@ -66,10 +66,6 @@ export const FormInput = styled(Input)`
   margin-bottom: 10px;
 `;
 
-export const FormInputMasked = styled(MaskedInput)`
-    margin-bottom: 10px;
-`;
-
 export const FormInputContainer = styled.View`
   margin-top: 10px;
   flex-direction: row;
@@ -82,4 +78,22 @@ export const FormInputLittle = styled(Input)`
 `;
 export const SubmitButton = styled(Button)`
   margin-top: 10px;
+`;
+
+export const ContainerFormMaskInput = styled.View`
+  padding: 0 15px;
+  height: 46px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+
+`;
+export const FormInputMasked = styled(TextInputMask)`
+    flex: 1;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fff;
 `;

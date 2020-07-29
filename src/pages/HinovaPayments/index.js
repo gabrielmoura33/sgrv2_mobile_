@@ -3,8 +3,22 @@ import { AntDesign } from '@expo/vector-icons';
 import { CardView } from 'react-native-credit-card-input';
 import { useNavigation } from '@react-navigation/native';
 import { KeyboardAvoidingView, Platform } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
-  Container, Header, FormInput, FormInputMasked, FormContainer, SubmitButton, FormInputLittle, FormInputContainer, ContentContainer, TitleContainer, Title, Backbutton, CreditCardContainer,
+  Container,
+  Header,
+  FormInput,
+  FormContainer,
+  SubmitButton,
+  FormInputLittle,
+  FormInputContainer,
+  ContentContainer,
+  TitleContainer,
+  Title,
+  Backbutton,
+  CreditCardContainer,
+  FormInputMasked,
+  ContainerFormMaskInput,
 } from './styles';
 
 const HinovaPayments = () => {
@@ -66,15 +80,21 @@ const HinovaPayments = () => {
               placeholder="CPF/CNPJ"
               returnKeyType="next"
             />
-            <FormInputMasked
-              icon="credit-card"
-              keyBoardType="mail-adress"
-              autoCorrect={false}
-              autoCaptalize="none"
-              placeholder="Numero do Cartão"
-              returnKeyType="next"
-              onChangeText={setNumber}
-            />
+            <ContainerFormMaskInput>
+              <Icon name="credit-card" size={20} color="rgba(255, 255,255, 0.6)" />
+              <FormInputMasked
+                type="credit-card"
+                placeholder="Número do cartão"
+                placeholderTextColor="rgba(255, 255, 255, 0.6)"
+                options={{
+                  obfuscated: false,
+
+                }}
+                value={number}
+                onChangeText={(text) => setNumber(text)}
+              />
+            </ContainerFormMaskInput>
+
             <FormInput
               icon="mail-outline"
               keyBoardType="mail-adress"
