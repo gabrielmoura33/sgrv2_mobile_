@@ -85,6 +85,7 @@ export const VehicleContainer = styled.View`
   background: #FFF;
   margin-top: 16px;
   border-radius: 12px;
+  width: 90%;
 
   ${(props) => props.situation === 'ativo' && css`
     border-color: #7ED897; 

@@ -88,10 +88,15 @@ const AddButton = ({ color }) => {
   const handleLogout = useCallback(() => {
     dispatch(signOut());
   }, []);
+  const handleNavigation = useCallback((destination, screen) => {
+    handlePress();
+    navigation.navigate(destination, { screen });
+  }, []);
+
   return (
     <View style={{ position: 'absolute', alignItems: 'center' }}>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Payments', { screen: 'Payments' })}
+        onPress={() => handleNavigation('Payments', 'Payments')}
       >
         <Animated.View style={{ position: 'absolute', left: thermometerX, top: thermometerY }}>
 
@@ -103,7 +108,7 @@ const AddButton = ({ color }) => {
 
       <Animated.View style={{ position: 'absolute', left: timeX, top: timeY }}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Vehicles', { screen: 'Vehicles' })}
+          onPress={() => handleNavigation('Vehicles', 'Vehicles')}
         >
           <View style={styles.secondaryButton}>
             <MaterialCommunityIcons name="car" size={24} color="#FFF" />

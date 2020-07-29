@@ -26,6 +26,7 @@ const HinovaPayments = () => {
   const [cvvFocused, setCvvFocused] = useState(false);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+  const [cvc, setCvc] = useState('');
 
   const navigation = useNavigation();
 
@@ -57,6 +58,7 @@ const HinovaPayments = () => {
               brand="master-card"
               number={number}
               name={name}
+              cvc={cvc}
               focused={cvvFocused ? 'cvc' : ''}
               allowScroll
             />
@@ -110,7 +112,6 @@ const HinovaPayments = () => {
                 autoCaptalize="none"
                 placeholder="Validade"
                 returnKeyType="next"
-                onFocus={() => setCvvFocused(true)}
               />
               <FormInputLittle
                 keyBoardType="mail-adress"
@@ -126,8 +127,8 @@ const HinovaPayments = () => {
                 placeholder="CVV"
                 returnKeyType="next"
                 onFocus={() => setCvvFocused(true)}
-
                 onBlur={() => setCvvFocused(false)}
+                onChangeText={setCvc}
               />
             </FormInputContainer>
             <SubmitButton>
