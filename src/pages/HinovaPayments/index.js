@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { AntDesign } from '@expo/vector-icons';
 import { CardView } from 'react-native-credit-card-input';
 import { useNavigation } from '@react-navigation/native';
@@ -22,15 +22,26 @@ import {
   ContainerFormMaskInput,
 } from './styles';
 
+const brandCreditcard = {
+  2: 'master-card',
+  3: 'american-express',
+  4: 'visa',
+  5: 'master-card',
+  6: 'discover',
+};
 const HinovaPayments = () => {
   const creditCardRef = useRef();
   const [cvvFocused, setCvvFocused] = useState(false);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [cvc, setCvc] = useState('');
+  const [brand, setBrand] = useState('');
 
   const navigation = useNavigation();
-
+  useEffect(() => {
+    const index = number.substr(0, 1);
+    setBrand(brandCreditcard[index]);
+  }, [number]);
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
@@ -56,7 +67,7 @@ const HinovaPayments = () => {
               ref={creditCardRef}
               bgColor="#3b3d3e"
               scale={0.9}
-              brand="master-card"
+              brand={brand}
               number={number}
               name={name}
               cvc={cvc}
