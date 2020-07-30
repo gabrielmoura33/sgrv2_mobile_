@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import { FlatList } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
@@ -33,17 +33,24 @@ export const List = styled.View`
 `;
 
 export const TextList = styled.Text`
-  color: #000000;
+  color: #333;
   font-size: 23px;
   padding-left: 35px;
   padding-bottom: 35px;
+  ${(props) => props.negative && css`
+    color: red;
+  `}
 `;
 
 export const TextInfo = styled.Text`
-  color: #000000;
+  color: #333;
   font-size: 23px;
   padding-bottom: 35px;
   padding-right: 20px;
+
+  ${(props) => props.negative && css`
+    color: red;
+  `}
 `;
 
 export const Flat = styled.View`

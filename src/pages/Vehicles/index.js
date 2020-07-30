@@ -24,6 +24,7 @@ import {
   Icon,
   Keyboard,
 } from './styles';
+import Status from '../../components/Status';
 
 function Vehicles() {
   const navigation = useNavigation();

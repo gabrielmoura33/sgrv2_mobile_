@@ -3,8 +3,6 @@ import { FlatList, Image, KeyboardAvoidingView } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 export const VehiclesList = styled(FlatList)`
-  width: 375px;
-  flex: 1;
   `;
 export const Back = styled.View`
   background: #DDE6E9;
@@ -83,9 +81,9 @@ export const VehicleContainer = styled.View`
   border-color: #fff;
   flex-direction: row;
   background: #FFF;
-  margin-top: 16px;
+  margin-top: 20px;
   border-radius: 12px;
-  width: 80%;
+  width: 100%;
 
   ${(props) => props.situation === 'ativo' && css`
     border-color: #7ED897; 
@@ -99,11 +97,12 @@ ${(props) => props.situation === 'inativo' && css`
 `;
 
 export const ImageView = styled.View`
-  padding: 10px;
+  padding: 20px;
+
 `;
 export const VehicleImage = styled(Image)`
-  width: 115px;
-  height: 100px;
+  width: 95px;
+  height: 90px;
 
 `;
 export const VehicleInfo = styled.View`

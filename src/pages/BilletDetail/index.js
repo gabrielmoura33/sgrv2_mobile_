@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Background from '../../components/Background';
 import {
   Container,
@@ -13,56 +13,18 @@ import {
   FilterList,
 } from './styles';
 
-export default function BilletDetail() {
-  const DATA = [
-    {
-      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      title: 'Produto',
-      value: '+1000',
-    },
-    {
-      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      title: 'Desconto',
-      value: '-520',
-    },
-    {
-      id: '58694a0f-3da1-471f-bd96-145571e29d72',
-      title: 'Acréscimo',
-      value: '+20',
-    },
-    {
-      id: '1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      title: 'Produto',
-      value: '+1000',
-    },
-    {
-      id: '23ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      title: 'Desconto',
-      value: '-520',
-    },
-    {
-      id: '358694a0f-3da1-471f-bd96-145571e29d72',
-      title: 'Acréscimo',
-      value: '+20',
-    },
-    {
-      id: '41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      title: 'Produto',
-      value: '+1000',
-    },
-    {
-      id: '123ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      title: 'Desconto',
-      value: '-520',
-    },
-    {
-      id: '2358694a0f-3da1-471f-bd96-145571e29d72',
-      title: 'Acréscimo',
-      value: '+20',
-    },
-  ];
-
+export default function BilletDetail({ route }) {
+  const { data: billetData } = route.params;
+  const [billetDetails, setBilletDetails] = useState([]);
+  useEffect(() => {
+    setBilletDetails(billetData.discriminacao);
+  }, []);
   const DATA2 = [
+    {
+      id: '3',
+      title: 'Arraste para filtrar',
+      value: '+1000',
+    },
     {
       id: '1',
       title: 'Produto',
@@ -79,27 +41,40 @@ export default function BilletDetail() {
       value: '+20',
     },
   ];
-
+  const handleScroll = useCallback((event) => {
+    if (event.nativeEvent.contentOffset.y < 40) {
+      setBilletDetails(billetData.discriminacao);
+    } else if (event.nativeEvent.contentOffset.y >= 40 && event.nativeEvent.contentOffset.y < 104) {
+      setBilletDetails(billetData.discriminacao.filter((el) => el.title === 'Produto'));
+    } else if (event.nativeEvent.contentOffset.y > 104 && event.nativeEvent.contentOffset.y <= 164) {
+      setBilletDetails(billetData.discriminacao.filter((el) => el.title === 'Desconto'));
+    } else if (event.nativeEvent.contentOffset.y > 164) {
+      setBilletDetails(billetData.discriminacao.filter((el) => el.title === 'Acréscimo'));
+    }
+  }, []);
   return (
     <>
       <Background>
         <Container>
           <Value>
-            $64.234
+            R$
+            {' '}
+            {billetData.valor}
           </Value>
         </Container>
 
         <Content>
           <Detail>Detailed</Detail>
           <ItemList
-            data={DATA}
+            data={billetDetails}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <List>
-                <TextList>{item.value}</TextList>
-                <TextInfo>{item.title}</TextInfo>
+                <TextList negative={item.value <= 0}>{item.value}</TextList>
+                <TextInfo negative={item.value <= 0}>{item.title}</TextInfo>
               </List>
             )}
+
           />
         </Content>
 
@@ -108,6 +83,7 @@ export default function BilletDetail() {
             data={DATA2}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => <TextInfo>{item.title}</TextInfo>}
+            onScroll={handleScroll}
           />
         </Flat>
 

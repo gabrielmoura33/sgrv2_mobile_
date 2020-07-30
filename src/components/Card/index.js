@@ -4,6 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 import Barcode from 'react-native-barcode-expo';
 import { useNavigation } from '@react-navigation/native';
 import PropTypes from 'prop-types';
+import { Clipboard, Alert } from 'react-native';
 import {
   Card,
   CardHeader,
@@ -27,7 +28,8 @@ export default function CardBillet({ card }) {
   const navigation = useNavigation();
   return (
     <CardContainer
-      onPress={() => navigation.navigate('Billet', { screen: 'Billet' })}
+      onPress={() => navigation.navigate('Billet', { screen: 'Billet', data: card })}
+      onLongPress={() => { Clipboard.setString(card.nosso_numero); Alert.alert(`${card.nosso_numero} Copiado!`); }}
     >
       <Card>
         <CardHeader>
