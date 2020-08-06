@@ -21,7 +21,7 @@ export const CardContent = styled.View`
 export const Type = styled.Text`
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 19px;
   /* identical to box height */
 

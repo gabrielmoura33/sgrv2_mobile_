@@ -33,7 +33,7 @@ export default function CardBillet({ card }) {
     >
       <Card>
         <CardHeader>
-          <Type>Carnê</Type>
+          <Type>Vence em 2 Dias</Type>
           <Status />
           <AntDesign name="pdffile1" size={24} color="black" />
         </CardHeader>

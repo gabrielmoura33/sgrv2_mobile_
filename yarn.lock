@@ -5429,7 +5429,7 @@ react-native-barcode-expo@^1.1.1:
 
 "react-native-credit-card-input@https://github.com/gabrielmoura33/react-native-credit-card-input":
   version "0.4.1"
-  resolved "https://github.com/gabrielmoura33/react-native-credit-card-input#3fcb7b1f9d6850826b077eabbf42afd2079af504"
+  resolved "https://github.com/gabrielmoura33/react-native-credit-card-input#2a2385f8f0e66ae60bd13b70a0827b87338fe2d8"
   dependencies:
     card-validator "^3.0.0"
     lodash.compact "^3.0.1"
