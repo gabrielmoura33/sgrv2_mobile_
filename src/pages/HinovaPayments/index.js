@@ -20,6 +20,8 @@ import {
   CreditCardContainer,
   FormInputMasked,
   ContainerFormMaskInput,
+  ColorContainer,
+  Color,
 } from './styles';
 
 const brandCreditcard = {
@@ -29,6 +31,7 @@ const brandCreditcard = {
   5: 'master-card',
   6: 'discover',
 };
+const colorSchema = ['#cccccc', '#e59826', '#00558c', '#bf6740', '#0a0a0a', '#4ab230'];
 const HinovaPayments = () => {
   const creditCardRef = useRef();
   const [cvvFocused, setCvvFocused] = useState(false);
@@ -36,6 +39,7 @@ const HinovaPayments = () => {
   const [number, setNumber] = useState('');
   const [cvc, setCvc] = useState('');
   const [brand, setBrand] = useState('');
+  const [color, setColor] = useState('#3b3d3e');
 
   const navigation = useNavigation();
   useEffect(() => {
@@ -60,12 +64,11 @@ const HinovaPayments = () => {
           </Backbutton>
           <Title>Payments Cartão</Title>
         </TitleContainer>
-
         <ContentContainer>
           <CreditCardContainer>
             <CardView
               ref={creditCardRef}
-              bgColor="#3b3d3e"
+              bgColor={color}
               scale={0.9}
               brand={brand}
               number={number}
@@ -76,6 +79,14 @@ const HinovaPayments = () => {
               imageBack={crediCardImage}
             />
           </CreditCardContainer>
+          <ColorContainer>
+            {
+              colorSchema.map((colorOne) => (
+                <Color color={colorOne} onPress={() => setColor(colorOne)} />
+              ))
+            }
+
+          </ColorContainer>
           <FormContainer>
             <FormInput
               icon="person"

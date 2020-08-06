@@ -59,7 +59,7 @@ export const FormContainer = styled.KeyboardAvoidingView.attrs({
   behavior: 'padding',
 })`
   align-self: stretch;
-  margin-top: 40px;
+  margin-top: 10px;
 `;
 
 export const FormInput = styled(Input)`
@@ -67,7 +67,6 @@ export const FormInput = styled(Input)`
 `;
 
 export const FormInputContainer = styled.View`
-  margin-top: 10px;
   flex-direction: row;
   justify-content: space-between;
   flex: 1;
@@ -77,7 +76,7 @@ export const FormInputLittle = styled(Input)`
   width: 30%;
 `;
 export const SubmitButton = styled(Button)`
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 export const ContainerFormMaskInput = styled.View`
@@ -96,4 +95,18 @@ export const FormInputMasked = styled(TextInputMask)`
     font-size: 15px;
     margin-left: 10px;
     color: #fff;
+`;
+
+export const ColorContainer = styled.View`
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+`;
+
+export const Color = styled.TouchableOpacity`
+  width: 28px;
+  height:28px;
+  border-radius: 14px;
+  background: ${(props) => props.color};
 `;
