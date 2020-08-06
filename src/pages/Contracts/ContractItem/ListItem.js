@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import {
   StyleSheet, Text, View, TouchableOpacity,
 } from 'react-native';
 import { MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
+import { useDispatch } from 'react-redux';
+import { animationSucess, animationCancel, breakAnimation } from '../../../store/modules/animations/actions';
 
 export const LIST_ITEM_HEIGHT = 54;
 const styles = StyleSheet.create({
@@ -39,6 +42,19 @@ const styles = StyleSheet.create({
 
 export default ({ item, isLast }) => {
   const bottomRadius = isLast ? 8 : 0;
+  const dispatch = useDispatch();
+  function handleAccept() {
+    dispatch(animationSucess());
+    setTimeout(() => {
+      dispatch(breakAnimation());
+    }, 2200);
+  }
+  function handleCancel() {
+    dispatch(animationCancel());
+    setTimeout(() => {
+      dispatch(breakAnimation());
+    }, 2000);
+  }
   return (
     <View
       style={[
@@ -50,7 +66,7 @@ export default ({ item, isLast }) => {
       ]}
     >
       <Text style={styles.name}>{item.title}</Text>
-      <TouchableOpacity style={item.type === 'accept' ? styles.pointsContainer : styles.pointsContainerRefuse}>
+      <TouchableOpacity style={item.type === 'accept' ? styles.pointsContainer : styles.pointsContainerRefuse} onLongPress={item.type === 'accept' ? handleAccept : handleCancel}>
         <Text style={styles.points}>
           {
             item.type === 'accept' ? (
