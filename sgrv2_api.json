@@ -1,19 +1,5574 @@
 {
-  "posts": [
+  "area_payments_cartao": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "error": false,
+      "draw": "1",
+      "recordsTotal": 1,
+      "recordsFiltered": 1,
+      "data": [
+        { "bandeira_cartao_id": "2", "cliente_cpf": "11606499602", "cliente_id": "150005", "cliente_nome": "GABRIEL DE MOURA E SOUZA", "created_at": "2020-06-08 15:38:23", "data_cadastro": null, "hash": "card_ckb6u97rb02q6rt5x2943gcht", "id": "168", "numero_final": "3931", "padrao": "S", "portador_cpf": "11606499602", "portador_nome": "NOME TESTE", "portador_telefone": "31885487788", "situacao_id": "1", "status": "Cartão cadastrado com sucesso", "status_codigo": "1", "updated_at": "2020-06-08 15:38:24"}
+      ]
     }
   ],
-  "comments": [
+  "area_veiculo": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "error": false,
+      "draw": "1",
+      "recordsTotal": 4,
+      "recordsFiltered": 4,
+      "data": [
+        {
+          "id": "19478",
+          "placa": "PLACA TES",
+          "situacao_id": "1",
+          "situacao": "ATIVO",
+          "modelo": "M BENZ 914",
+          "cliente": "GABRIEL DE MOURA E SOUZA",
+          "matriz_filial_id": "1",
+          "DT_RowId": "19478",
+          "identificacao_veiculo": null,
+          "alerta_usuario_id": null,
+          "numero_equipamento": "10000000000013",
+          "rastreador_veiculo_id": "937",
+          "interveniente_id": "11944",
+          "cliente_cartao_id": null,
+          "numero_final": null,
+          "vinculo_rastreador": [
+            {
+              "id": "937",
+              "veiculo_id": "19478",
+              "vencimento_id": "787",
+              "sistema_id": "316",
+              "gerar_cobranca": "S",
+              "formato_geracao_boleto": "B",
+              "possivel_bloqueio": "N",
+              "interveniente_id": "11944",
+              "banco_id": "2",
+              "grupo_id": "16",
+              "tecnico_id": null,
+              "data_instalacao": "20\/05\/2020",
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": null,
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": {
+                "id": "787",
+                "descricao": "32"
+              },
+              "banco": {
+                "id": "2",
+                "situacao_id": "1",
+                "codigo": "237",
+                "agencia": "1979",
+                "agencia_dv": "0",
+                "conta": "4150",
+                "conta_dv": "5",
+                "carteira": "09",
+                "nosso_numero": "2643",
+                "carteira_registrada": "S",
+                "codigo_cedente": "",
+                "codigo_convenio": "",
+                "codigo_variacao": "",
+                "numero_contrato": "",
+                "chave_j": "",
+                "especie_documento": "RC",
+                "protestar": "N",
+                "protestar_apos": "0",
+                "flash": "N",
+                "codigo_flash": null,
+                "linha_inicial_flash": "1",
+                "exibir_placa_boleto": "N",
+                "recibo_sacado": "N",
+                "exibir_extrato_rateio_flash": "N",
+                "mensagem_externa_flash": "N",
+                "modalidade_cobranca": null,
+                "posto": null,
+                "codigo_instrucao": "0",
+                "codigo_transmissao": "",
+                "cnab": "240",
+                "layout": "2",
+                "homologado": "S",
+                "saldo_inicial": "25.000,00",
+                "nivel": "U",
+                "padrao": "N",
+                "gerente": null,
+                "ddd_agencia": null,
+                "telefone_agencia": null,
+                "importar_tarifa_bancaria_mgf": "S",
+                "data_importacao_tarifa_bancaria_mgf": "2020-02-19",
+                "importar_boletos_mgf": "S",
+                "data_importacao_boletos_mgf": "2020-02-19",
+                "tipo_mensagem_flash": null,
+                "calcular_multa_mora_automatico_apos": "1",
+                "limite_especial": "25.000,00",
+                "banco_extra": null,
+                "valor_taxa_emissao_boleto": "0,00",
+                "ultima_remessa": "171",
+                "apelido": null,
+                "exibir_grafico_mgf": "S",
+                "considerar_periodo_prorrogacao": "N",
+                "tipo_multa": "%",
+                "multa": "0.000",
+                "tipo_mora": "%",
+                "mora": "0.000",
+                "tx_reenv_boleto_venc": "0.00",
+                "tipo_tx_reenv_boleto_venc": "%",
+                "tarifa_bancaria_texto": null,
+                "tarifa_bancaria_valor": null,
+                "baixar_apos": 30,
+                "updated_at": "2020-07-17 08:46:04",
+                "created_at": "06\/02\/2017 17:26:58",
+                "ultima_remassa": null,
+                "layout_boleto": null,
+                "desconto_pagamento_adiantado": "N",
+                "tipo_desconto": "",
+                "valor_desconto_pagamento_adiantado": null,
+                "dias_desconto_pagamento_adiantado": null,
+                "exibir_valor_cobrado": "S",
+                "token": null,
+                "url": null,
+                "nome_cedente": null,
+                "cnpj_cedente": null,
+                "fornecedor": null,
+                "favorecido_id": null,
+                "bancogeral": {
+                  "id": "237",
+                  "descricao": "BANCO BRADESCO S.A."
+                }
+              },
+              "grupo": {
+                "id": "16",
+                "descricao": "GRUPO GIGA",
+                "valor": "150,00"
+              },
+              "monitoramento": {
+                "id": "316",
+                "descricao": "DIAMANTE"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "11944",
+                "nome": "JULIO FALCAO"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                
+              ]
+            },
+            {
+              "id": "938",
+              "veiculo_id": "19478",
+              "vencimento_id": "787",
+              "sistema_id": "771",
+              "gerar_cobranca": "N",
+              "formato_geracao_boleto": "B",
+              "possivel_bloqueio": "N",
+              "interveniente_id": "11944",
+              "banco_id": "2",
+              "grupo_id": "16",
+              "tecnico_id": null,
+              "data_instalacao": "07\/05\/2020",
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": null,
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": {
+                "id": "787",
+                "descricao": "32"
+              },
+              "banco": {
+                "id": "2",
+                "situacao_id": "1",
+                "codigo": "237",
+                "agencia": "1979",
+                "agencia_dv": "0",
+                "conta": "4150",
+                "conta_dv": "5",
+                "carteira": "09",
+                "nosso_numero": "2643",
+                "carteira_registrada": "S",
+                "codigo_cedente": "",
+                "codigo_convenio": "",
+                "codigo_variacao": "",
+                "numero_contrato": "",
+                "chave_j": "",
+                "especie_documento": "RC",
+                "protestar": "N",
+                "protestar_apos": "0",
+                "flash": "N",
+                "codigo_flash": null,
+                "linha_inicial_flash": "1",
+                "exibir_placa_boleto": "N",
+                "recibo_sacado": "N",
+                "exibir_extrato_rateio_flash": "N",
+                "mensagem_externa_flash": "N",
+                "modalidade_cobranca": null,
+                "posto": null,
+                "codigo_instrucao": "0",
+                "codigo_transmissao": "",
+                "cnab": "240",
+                "layout": "2",
+                "homologado": "S",
+                "saldo_inicial": "25.000,00",
+                "nivel": "U",
+                "padrao": "N",
+                "gerente": null,
+                "ddd_agencia": null,
+                "telefone_agencia": null,
+                "importar_tarifa_bancaria_mgf": "S",
+                "data_importacao_tarifa_bancaria_mgf": "2020-02-19",
+                "importar_boletos_mgf": "S",
+                "data_importacao_boletos_mgf": "2020-02-19",
+                "tipo_mensagem_flash": null,
+                "calcular_multa_mora_automatico_apos": "1",
+                "limite_especial": "25.000,00",
+                "banco_extra": null,
+                "valor_taxa_emissao_boleto": "0,00",
+                "ultima_remessa": "171",
+                "apelido": null,
+                "exibir_grafico_mgf": "S",
+                "considerar_periodo_prorrogacao": "N",
+                "tipo_multa": "%",
+                "multa": "0.000",
+                "tipo_mora": "%",
+                "mora": "0.000",
+                "tx_reenv_boleto_venc": "0.00",
+                "tipo_tx_reenv_boleto_venc": "%",
+                "tarifa_bancaria_texto": null,
+                "tarifa_bancaria_valor": null,
+                "baixar_apos": 30,
+                "updated_at": "2020-07-17 08:46:04",
+                "created_at": "06\/02\/2017 17:26:58",
+                "ultima_remassa": null,
+                "layout_boleto": null,
+                "desconto_pagamento_adiantado": "N",
+                "tipo_desconto": "",
+                "valor_desconto_pagamento_adiantado": null,
+                "dias_desconto_pagamento_adiantado": null,
+                "exibir_valor_cobrado": "S",
+                "token": null,
+                "url": null,
+                "nome_cedente": null,
+                "cnpj_cedente": null,
+                "fornecedor": null,
+                "favorecido_id": null,
+                "bancogeral": {
+                  "id": "237",
+                  "descricao": "BANCO BRADESCO S.A."
+                }
+              },
+              "grupo": {
+                "id": "16",
+                "descricao": "GRUPO GIGA",
+                "valor": "150,00"
+              },
+              "monitoramento": {
+                "id": "771",
+                "descricao": "FULLTRACK"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "11944",
+                "nome": "JULIO FALCAO"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                
+              ]
+            }
+          ]
+        },
+        {
+          "id": "19478",
+          "placa": "PLACA TES",
+          "situacao_id": "1",
+          "situacao": "ATIVO",
+          "modelo": "M BENZ 914",
+          "cliente": "GABRIEL DE MOURA E SOUZA",
+          "matriz_filial_id": "1",
+          "DT_RowId": "19478",
+          "identificacao_veiculo": null,
+          "alerta_usuario_id": null,
+          "numero_equipamento": "10000000000014",
+          "rastreador_veiculo_id": "938",
+          "interveniente_id": "11944",
+          "cliente_cartao_id": null,
+          "numero_final": null,
+          "vinculo_rastreador": [
+            {
+              "id": "937",
+              "veiculo_id": "19478",
+              "vencimento_id": "787",
+              "sistema_id": "316",
+              "gerar_cobranca": "S",
+              "formato_geracao_boleto": "B",
+              "possivel_bloqueio": "N",
+              "interveniente_id": "11944",
+              "banco_id": "2",
+              "grupo_id": "16",
+              "tecnico_id": null,
+              "data_instalacao": "20\/05\/2020",
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": null,
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": {
+                "id": "787",
+                "descricao": "32"
+              },
+              "banco": {
+                "id": "2",
+                "situacao_id": "1",
+                "codigo": "237",
+                "agencia": "1979",
+                "agencia_dv": "0",
+                "conta": "4150",
+                "conta_dv": "5",
+                "carteira": "09",
+                "nosso_numero": "2643",
+                "carteira_registrada": "S",
+                "codigo_cedente": "",
+                "codigo_convenio": "",
+                "codigo_variacao": "",
+                "numero_contrato": "",
+                "chave_j": "",
+                "especie_documento": "RC",
+                "protestar": "N",
+                "protestar_apos": "0",
+                "flash": "N",
+                "codigo_flash": null,
+                "linha_inicial_flash": "1",
+                "exibir_placa_boleto": "N",
+                "recibo_sacado": "N",
+                "exibir_extrato_rateio_flash": "N",
+                "mensagem_externa_flash": "N",
+                "modalidade_cobranca": null,
+                "posto": null,
+                "codigo_instrucao": "0",
+                "codigo_transmissao": "",
+                "cnab": "240",
+                "layout": "2",
+                "homologado": "S",
+                "saldo_inicial": "25.000,00",
+                "nivel": "U",
+                "padrao": "N",
+                "gerente": null,
+                "ddd_agencia": null,
+                "telefone_agencia": null,
+                "importar_tarifa_bancaria_mgf": "S",
+                "data_importacao_tarifa_bancaria_mgf": "2020-02-19",
+                "importar_boletos_mgf": "S",
+                "data_importacao_boletos_mgf": "2020-02-19",
+                "tipo_mensagem_flash": null,
+                "calcular_multa_mora_automatico_apos": "1",
+                "limite_especial": "25.000,00",
+                "banco_extra": null,
+                "valor_taxa_emissao_boleto": "0,00",
+                "ultima_remessa": "171",
+                "apelido": null,
+                "exibir_grafico_mgf": "S",
+                "considerar_periodo_prorrogacao": "N",
+                "tipo_multa": "%",
+                "multa": "0.000",
+                "tipo_mora": "%",
+                "mora": "0.000",
+                "tx_reenv_boleto_venc": "0.00",
+                "tipo_tx_reenv_boleto_venc": "%",
+                "tarifa_bancaria_texto": null,
+                "tarifa_bancaria_valor": null,
+                "baixar_apos": 30,
+                "updated_at": "2020-07-17 08:46:04",
+                "created_at": "06\/02\/2017 17:26:58",
+                "ultima_remassa": null,
+                "layout_boleto": null,
+                "desconto_pagamento_adiantado": "N",
+                "tipo_desconto": "",
+                "valor_desconto_pagamento_adiantado": null,
+                "dias_desconto_pagamento_adiantado": null,
+                "exibir_valor_cobrado": "S",
+                "token": null,
+                "url": null,
+                "nome_cedente": null,
+                "cnpj_cedente": null,
+                "fornecedor": null,
+                "favorecido_id": null,
+                "bancogeral": {
+                  "id": "237",
+                  "descricao": "BANCO BRADESCO S.A."
+                }
+              },
+              "grupo": {
+                "id": "16",
+                "descricao": "GRUPO GIGA",
+                "valor": "150,00"
+              },
+              "monitoramento": {
+                "id": "316",
+                "descricao": "DIAMANTE"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "11944",
+                "nome": "JULIO FALCAO"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                
+              ]
+            },
+            {
+              "id": "938",
+              "veiculo_id": "19478",
+              "vencimento_id": "787",
+              "sistema_id": "771",
+              "gerar_cobranca": "N",
+              "formato_geracao_boleto": "B",
+              "possivel_bloqueio": "N",
+              "interveniente_id": "11944",
+              "banco_id": "2",
+              "grupo_id": "16",
+              "tecnico_id": null,
+              "data_instalacao": "07\/05\/2020",
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": null,
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": {
+                "id": "787",
+                "descricao": "32"
+              },
+              "banco": {
+                "id": "2",
+                "situacao_id": "1",
+                "codigo": "237",
+                "agencia": "1979",
+                "agencia_dv": "0",
+                "conta": "4150",
+                "conta_dv": "5",
+                "carteira": "09",
+                "nosso_numero": "2643",
+                "carteira_registrada": "S",
+                "codigo_cedente": "",
+                "codigo_convenio": "",
+                "codigo_variacao": "",
+                "numero_contrato": "",
+                "chave_j": "",
+                "especie_documento": "RC",
+                "protestar": "N",
+                "protestar_apos": "0",
+                "flash": "N",
+                "codigo_flash": null,
+                "linha_inicial_flash": "1",
+                "exibir_placa_boleto": "N",
+                "recibo_sacado": "N",
+                "exibir_extrato_rateio_flash": "N",
+                "mensagem_externa_flash": "N",
+                "modalidade_cobranca": null,
+                "posto": null,
+                "codigo_instrucao": "0",
+                "codigo_transmissao": "",
+                "cnab": "240",
+                "layout": "2",
+                "homologado": "S",
+                "saldo_inicial": "25.000,00",
+                "nivel": "U",
+                "padrao": "N",
+                "gerente": null,
+                "ddd_agencia": null,
+                "telefone_agencia": null,
+                "importar_tarifa_bancaria_mgf": "S",
+                "data_importacao_tarifa_bancaria_mgf": "2020-02-19",
+                "importar_boletos_mgf": "S",
+                "data_importacao_boletos_mgf": "2020-02-19",
+                "tipo_mensagem_flash": null,
+                "calcular_multa_mora_automatico_apos": "1",
+                "limite_especial": "25.000,00",
+                "banco_extra": null,
+                "valor_taxa_emissao_boleto": "0,00",
+                "ultima_remessa": "171",
+                "apelido": null,
+                "exibir_grafico_mgf": "S",
+                "considerar_periodo_prorrogacao": "N",
+                "tipo_multa": "%",
+                "multa": "0.000",
+                "tipo_mora": "%",
+                "mora": "0.000",
+                "tx_reenv_boleto_venc": "0.00",
+                "tipo_tx_reenv_boleto_venc": "%",
+                "tarifa_bancaria_texto": null,
+                "tarifa_bancaria_valor": null,
+                "baixar_apos": 30,
+                "updated_at": "2020-07-17 08:46:04",
+                "created_at": "06\/02\/2017 17:26:58",
+                "ultima_remassa": null,
+                "layout_boleto": null,
+                "desconto_pagamento_adiantado": "N",
+                "tipo_desconto": "",
+                "valor_desconto_pagamento_adiantado": null,
+                "dias_desconto_pagamento_adiantado": null,
+                "exibir_valor_cobrado": "S",
+                "token": null,
+                "url": null,
+                "nome_cedente": null,
+                "cnpj_cedente": null,
+                "fornecedor": null,
+                "favorecido_id": null,
+                "bancogeral": {
+                  "id": "237",
+                  "descricao": "BANCO BRADESCO S.A."
+                }
+              },
+              "grupo": {
+                "id": "16",
+                "descricao": "GRUPO GIGA",
+                "valor": "150,00"
+              },
+              "monitoramento": {
+                "id": "771",
+                "descricao": "FULLTRACK"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "11944",
+                "nome": "JULIO FALCAO"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                
+              ]
+            }
+          ]
+        },
+        {
+          "id": "19450",
+          "placa": "PUF9258",
+          "situacao_id": "1152",
+          "situacao": "INADIMPLENTE",
+          "modelo": "PRISMA  SED. MAXX\/ LT 1.4 8V ECONOF. 4P",
+          "cliente": "GABRIEL DE MOURA E SOUZA",
+          "matriz_filial_id": "1",
+          "DT_RowId": "19450",
+          "identificacao_veiculo": "",
+          "alerta_usuario_id": null,
+          "numero_equipamento": "111111111",
+          "rastreador_veiculo_id": "943",
+          "interveniente_id": "150005",
+          "cliente_cartao_id": null,
+          "numero_final": null,
+          "vinculo_rastreador": [
+            {
+              "id": "943",
+              "veiculo_id": "19450",
+              "vencimento_id": null,
+              "sistema_id": "571",
+              "gerar_cobranca": null,
+              "formato_geracao_boleto": null,
+              "possivel_bloqueio": "N",
+              "interveniente_id": "150005",
+              "banco_id": null,
+              "grupo_id": null,
+              "tecnico_id": null,
+              "data_instalacao": null,
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": null,
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": null,
+              "banco": null,
+              "grupo": null,
+              "monitoramento": {
+                "id": "571",
+                "descricao": "GETRAK"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "150005",
+                "nome": "GABRIEL DE MOURA E SOUZA"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                
+              ]
+            }
+          ]
+        },
+        {
+          "id": "16282",
+          "placa": "ADJ2033",
+          "situacao_id": "1152",
+          "situacao": "INADIMPLENTE",
+          "modelo": "GOLF SPORTLINE 1.6 MI TOTAL FLEX 8V 4P",
+          "cliente": "GABRIEL DE MOURA E SOUZA",
+          "matriz_filial_id": "1",
+          "DT_RowId": "16282",
+          "identificacao_veiculo": "",
+          "alerta_usuario_id": null,
+          "numero_equipamento": "352093080130411",
+          "rastreador_veiculo_id": "917",
+          "interveniente_id": "150029",
+          "cliente_cartao_id": "0",
+          "numero_final": null,
+          "vinculo_rastreador": [
+            {
+              "id": "917",
+              "veiculo_id": "16282",
+              "vencimento_id": "610",
+              "sistema_id": "571",
+              "gerar_cobranca": "N",
+              "formato_geracao_boleto": "B",
+              "possivel_bloqueio": "N",
+              "interveniente_id": "150029",
+              "banco_id": "9",
+              "grupo_id": "22",
+              "tecnico_id": null,
+              "data_instalacao": "14\/02\/2020",
+              "reajuste_igpm": "0.00",
+              "referente_reajuste_igpm": null,
+              "qtde_parcela": "0",
+              "local_instalacao_modulo": null,
+              "tipo_rastreador_id": "273",
+              "interveniente_sincronismo_id": null,
+              "valor_instalacao": "0,00",
+              "desconto": null,
+              "acrescimo": null,
+              "vencimento": {
+                "id": "610",
+                "descricao": "07"
+              },
+              "banco": {
+                "id": "9",
+                "situacao_id": "1",
+                "codigo": "237",
+                "agencia": "001",
+                "agencia_dv": "0",
+                "conta": "0000111",
+                "conta_dv": "0",
+                "carteira": "09",
+                "nosso_numero": "673",
+                "carteira_registrada": "N",
+                "codigo_cedente": "",
+                "codigo_convenio": "",
+                "codigo_variacao": "",
+                "numero_contrato": "",
+                "chave_j": "",
+                "especie_documento": "RC",
+                "protestar": "N",
+                "protestar_apos": "0",
+                "flash": "N",
+                "codigo_flash": null,
+                "linha_inicial_flash": "1",
+                "exibir_placa_boleto": "N",
+                "recibo_sacado": "N",
+                "exibir_extrato_rateio_flash": "N",
+                "mensagem_externa_flash": "N",
+                "modalidade_cobranca": null,
+                "posto": null,
+                "codigo_instrucao": "0",
+                "codigo_transmissao": "",
+                "cnab": "240",
+                "layout": "2",
+                "homologado": "N",
+                "saldo_inicial": "0,00",
+                "nivel": "U",
+                "padrao": "N",
+                "gerente": null,
+                "ddd_agencia": null,
+                "telefone_agencia": null,
+                "importar_tarifa_bancaria_mgf": "N",
+                "data_importacao_tarifa_bancaria_mgf": null,
+                "importar_boletos_mgf": "N",
+                "data_importacao_boletos_mgf": null,
+                "tipo_mensagem_flash": null,
+                "calcular_multa_mora_automatico_apos": "0",
+                "limite_especial": "0,00",
+                "banco_extra": null,
+                "valor_taxa_emissao_boleto": "0,00",
+                "ultima_remessa": "13",
+                "apelido": null,
+                "exibir_grafico_mgf": "S",
+                "considerar_periodo_prorrogacao": "N",
+                "tipo_multa": "%",
+                "multa": "0.000",
+                "tipo_mora": "%",
+                "mora": "0.000",
+                "tx_reenv_boleto_venc": "0.00",
+                "tipo_tx_reenv_boleto_venc": "%",
+                "tarifa_bancaria_texto": null,
+                "tarifa_bancaria_valor": null,
+                "baixar_apos": 30,
+                "updated_at": "2020-07-10 14:06:41",
+                "created_at": "19\/12\/2018 19:59:50",
+                "ultima_remassa": null,
+                "layout_boleto": null,
+                "desconto_pagamento_adiantado": "N",
+                "tipo_desconto": "R",
+                "valor_desconto_pagamento_adiantado": null,
+                "dias_desconto_pagamento_adiantado": null,
+                "exibir_valor_cobrado": "S",
+                "token": null,
+                "url": null,
+                "nome_cedente": null,
+                "cnpj_cedente": null,
+                "fornecedor": null,
+                "favorecido_id": null,
+                "bancogeral": {
+                  "id": "237",
+                  "descricao": "BANCO BRADESCO S.A."
+                }
+              },
+              "grupo": {
+                "id": "22",
+                "descricao": "GRUPO BLACK 150.00",
+                "valor": "155,00"
+              },
+              "monitoramento": {
+                "id": "571",
+                "descricao": "GETRAK"
+              },
+              "tecnico": null,
+              "interveniente_rastreador": {
+                "id": "150029",
+                "nome": "SALSICHA2"
+              },
+              "interveniente_sincronismo": null,
+              "produto_rastreador": [
+                {
+                  "id": "426",
+                  "rastreador_veiculo_id": "917",
+                  "produto_id": "4",
+                  "produto": {
+                    "id": "4",
+                    "descricao": "COBRAN\u00c7A INSTALA\u00c7\u00c3O - 199"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "auth": [
+    {
+      "error": false,
+      "user": {
+        "status": "success",
+        "session": {
+          "user_id": "150005",
+          "user_cliente": "1380",
+          "user_nome": "GABRIEL DE MOURA E SOUZA",
+          "user_ip": "191.185.112.90",
+          "user_base": "dGlja2V0",
+          "session_id": "82c54fc3225e14e727dec55697e43d73627f93e7",
+          "session_start_time": 1595520192,
+          "session_timeout": 14400,
+          "session_id_mgf": "gvgknl16hctf7cjni2l1d47dp5",
+          "user_roles": [
+            "cadastro.area_cliente_cartao",
+            "cadastro.area_payments_cartao",
+            "associado"
+          ],
+          "permissao": {
+            "vinculo_pagamento": "N",
+            "veiculo_mascara_placa_cadastro": "N",
+            "pagarme": "S",
+            "key_pagar_me_teste": "ak_test_vbm09D5y2ncheWeYN6YcniDEOydbK8",
+            "key_pagar_me": "ak_live_fUC7ZRQCcfKzNSdwPnlptJpGTo385E"
+          }
+        },
+        "aa": {
+          "base": [
+            {
+              "id": "1380",
+              "chave_api": "b3395dd46c34fa7fd8d729d8cf88b7a9",
+              "responsavel_base": null,
+              "nome_banco": "sgrv2_desenvolvimento",
+              "cnpj": "10628874000141",
+              "situacao": "A",
+              "versao_sistema": "2",
+              "ip": "192.168.1.9",
+              "path_storage_master": "storageSSD1",
+              "path_storage_slave": "storageSATA2"
+            }
+          ],
+          "nome_base": "sgrv2_desenvolvimento",
+          "responsavel_base": null,
+          "servidor_mail": {
+            "id": "1",
+            "id_projeto_ws_mail": "1",
+            "descricao": "Hinova Mail",
+            "host": "192.168.97.100",
+            "username": "sga@hinovamail.com.br",
+            "password": "Sga@2014",
+            "port": "587",
+            "ativo": "S"
+          },
+          "user_id": "150005",
+          "user_cliente": "1380",
+          "user_nome": "GABRIEL DE MOURA E SOUZA",
+          "user_ip": "191.185.112.90",
+          "session_start_time": 1595520192,
+          "session_timeout": 14400,
+          "session_id": "82c54fc3225e14e727dec55697e43d73627f93e7",
+          "sistema": "area"
+        },
+        "token": {
+          "_status": 1,
+          "_token": "$2y$10$v4W0UiGzRtLbgIFay2Ki7OjJmiQd96iFgAwFcri8Nkiy8yEfDzwGa",
+          "_origin": "191.185.112.90",
+          "_session": "82c54fc3225e14e727dec55697e43d73627f93e7",
+          "_timestamp": 1595520192,
+          "_mobile": null
+        },
+        "sistema": "area",
+        "url_origem": null
+      }
+    }
+   ],
+   "area_boleto": [
+    {
+      "error": false,
+      "draw": "1",
+      "recordsTotal": 76,
+      "recordsFiltered": 76,
+      "data": [
+        {
+          "id": "5165",
+          "mes_referente": "03\/2021",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2594",
+          "descricao": "Cancelado",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "30\/06\/2021",
+          "data_vencimento_original": "30\/06\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5165",
+          "discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5167",
+          "mes_referente": "02\/2021",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2593",
+          "descricao": "Cancelado",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/05\/2021",
+          "data_vencimento_original": "31\/05\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5167",
+        "discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5154",
+          "mes_referente": "01\/2021",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2592",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "30\/04\/2021",
+          "data_vencimento_original": "30\/04\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5154",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5153",
+          "mes_referente": "12\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2591",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/03\/2021",
+          "data_vencimento_original": "31\/03\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5153",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5152",
+          "mes_referente": "11\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2590",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "28\/02\/2021",
+          "data_vencimento_original": "28\/02\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5152",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5151",
+          "mes_referente": "10\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2589",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/01\/2021",
+          "data_vencimento_original": "31\/01\/2021",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5151",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5150",
+          "mes_referente": "09\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2588",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/12\/2020",
+          "data_vencimento_original": "31\/12\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5150",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5149",
+          "mes_referente": "08\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2587",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "30\/11\/2020",
+          "data_vencimento_original": "30\/11\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5149",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5148",
+          "mes_referente": "07\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2586",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/10\/2020",
+          "data_vencimento_original": "31\/10\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5148",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5147",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2585",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "30\/09\/2020",
+          "data_vencimento_original": "30\/09\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5147",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5146",
+          "mes_referente": "05\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2584",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/08\/2020",
+          "data_vencimento_original": "31\/08\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5146",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5145",
+          "mes_referente": "04\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2583",
+          "descricao": "Aberto",
+          "data_emissao": "07\/07\/2020",
+          "data_vencimento": "31\/07\/2020",
+          "data_vencimento_original": "31\/07\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5145",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5280",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "211313",
+          "descricao": "Aberto",
+          "data_emissao": "23\/07\/2020",
+          "data_vencimento": "30\/07\/2020",
+          "data_vencimento_original": "30\/07\/2020",
+          "data_pagamento": null,
+          "valor": "81,00",
+          "codigo": "85",
+          "DT_RowId": "5280",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5282",
+          "mes_referente": "04\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "9",
+          "descricao": "Aberto",
+          "data_emissao": "23\/07\/2020",
+          "data_vencimento": "30\/07\/2020",
+          "data_vencimento_original": "30\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "756",
+          "DT_RowId": "5282",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5281",
+          "mes_referente": "12\/2019",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2645",
+          "descricao": "Aberto",
+          "data_emissao": "23\/07\/2020",
+          "data_vencimento": "30\/07\/2020",
+          "data_vencimento_original": "30\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5281",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5283",
+          "mes_referente": "04\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "10",
+          "descricao": "Aberto",
+          "data_emissao": "23\/07\/2020",
+          "data_vencimento": "30\/07\/2020",
+          "data_vencimento_original": "30\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "756",
+          "DT_RowId": "5283",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5262",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2628",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "81,00",
+          "codigo": "237",
+          "DT_RowId": "5262",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5264",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2630",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5264",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5265",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2631",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5265",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5266",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2632",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5266",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5267",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2633",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5267",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5268",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2634",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5268",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5269",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2635",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5269",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5270",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2636",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5270",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5271",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2637",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5271",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5263",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2629",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5263",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5272",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2638",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5272",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5277",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2643",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5277",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5276",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2642",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5276",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5275",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2641",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5275",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5274",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2640",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5274",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5273",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2639",
+          "descricao": "Aberto",
+          "data_emissao": "17\/07\/2020",
+          "data_vencimento": "24\/07\/2020",
+          "data_vencimento_original": "24\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5273",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5251",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2617",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5251",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5252",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2618",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5252",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5253",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2619",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5253",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5254",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2620",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5254",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5255",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2621",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5255",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5256",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2622",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5256",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5257",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2623",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5257",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5258",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2624",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5258",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5259",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2625",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5259",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5260",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2626",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5260",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5261",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2627",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5261",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5250",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2616",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5250",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5249",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2615",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5249",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5237",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1014",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5237",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5236",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1013",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5236",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5235",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1012",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5235",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5234",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2610",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "81,00",
+          "codigo": "237",
+          "DT_RowId": "5234",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5233",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2609",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "81,00",
+          "codigo": "237",
+          "DT_RowId": "5233",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5232",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2608",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5232",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5231",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2607",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "100,00",
+          "codigo": "237",
+          "DT_RowId": "5231",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5230",
+          "mes_referente": "07\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2606",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "0,00",
+          "codigo": "237",
+          "DT_RowId": "5230",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5238",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1015",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5238",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5239",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1016",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5239",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5240",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1017",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5240",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5248",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2614",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5248",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5247",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2613",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5247",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5246",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2612",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5246",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5245",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2611",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "237",
+          "DT_RowId": "5245",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5244",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1021",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "81,00",
+          "codigo": "1",
+          "DT_RowId": "5244",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5243",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1020",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5243",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5242",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1019",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5242",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5241",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1018",
+          "descricao": "Aberto",
+          "data_emissao": "16\/07\/2020",
+          "data_vencimento": "23\/07\/2020",
+          "data_vencimento_original": "23\/07\/2020",
+          "data_pagamento": null,
+          "valor": "90,00",
+          "codigo": "1",
+          "DT_RowId": "5241",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5176",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "669",
+          "descricao": "Aberto",
+          "data_emissao": "10\/07\/2020",
+          "data_vencimento": "17\/07\/2020",
+          "data_vencimento_original": "17\/07\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5176",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5177",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "670",
+          "descricao": "Aberto",
+          "data_emissao": "10\/07\/2020",
+          "data_vencimento": "17\/07\/2020",
+          "data_vencimento_original": "17\/07\/2020",
+          "data_pagamento": null,
+          "valor": "9,80",
+          "codigo": "237",
+          "DT_RowId": "5177",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5178",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "671",
+          "descricao": "Aberto",
+          "data_emissao": "10\/07\/2020",
+          "data_vencimento": "17\/07\/2020",
+          "data_vencimento_original": "17\/07\/2020",
+          "data_pagamento": null,
+          "valor": "125,00",
+          "codigo": "237",
+          "DT_RowId": "5178",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5179",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "672",
+          "descricao": "Aberto",
+          "data_emissao": "10\/07\/2020",
+          "data_vencimento": "17\/07\/2020",
+          "data_vencimento_original": "17\/07\/2020",
+          "data_pagamento": null,
+          "valor": "125,00",
+          "codigo": "237",
+          "DT_RowId": "5179",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5180",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "673",
+          "descricao": "Aberto",
+          "data_emissao": "10\/07\/2020",
+          "data_vencimento": "17\/07\/2020",
+          "data_vencimento_original": "17\/07\/2020",
+          "data_pagamento": null,
+          "valor": "125,00",
+          "codigo": "237",
+          "DT_RowId": "5180",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5169",
+          "mes_referente": "07\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1009",
+          "descricao": "Aberto",
+          "data_emissao": "09\/07\/2020",
+          "data_vencimento": "16\/07\/2020",
+          "data_vencimento_original": "16\/07\/2020",
+          "data_pagamento": null,
+          "valor": "0,00",
+          "codigo": "1",
+          "DT_RowId": "5169",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5168",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2602",
+          "descricao": "Aberto",
+          "data_emissao": "08\/07\/2020",
+          "data_vencimento": "15\/07\/2020",
+          "data_vencimento_original": "15\/07\/2020",
+          "data_pagamento": null,
+          "valor": "0,00",
+          "codigo": "237",
+          "DT_RowId": "5168",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5166",
+          "mes_referente": "06\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2601",
+          "descricao": "Aberto",
+          "data_emissao": "08\/07\/2020",
+          "data_vencimento": "15\/07\/2020",
+          "data_vencimento_original": "15\/07\/2020",
+          "data_pagamento": null,
+          "valor": "0,00",
+          "codigo": "237",
+          "DT_RowId": "5166",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5132",
+          "mes_referente": "04\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1008",
+          "descricao": "Aberto",
+          "data_emissao": "01\/07\/2020",
+          "data_vencimento": "15\/07\/2020",
+          "data_vencimento_original": "15\/07\/2020",
+          "data_pagamento": null,
+          "valor": "98,00",
+          "codigo": "1",
+          "DT_RowId": "5132",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5131",
+          "mes_referente": "07\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2570",
+          "descricao": "Aberto",
+          "data_emissao": "26\/06\/2020",
+          "data_vencimento": "03\/07\/2020",
+          "data_vencimento_original": "03\/07\/2020",
+          "data_pagamento": null,
+          "valor": "98,56",
+          "codigo": "237",
+          "DT_RowId": "5131",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5130",
+          "mes_referente": "07\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "1007",
+          "descricao": "Aberto",
+          "data_emissao": "25\/06\/2020",
+          "data_vencimento": "02\/07\/2020",
+          "data_vencimento_original": "02\/07\/2020",
+          "data_pagamento": null,
+          "valor": "196,00",
+          "codigo": "1",
+          "DT_RowId": "5130",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "5129",
+          "mes_referente": "05\/2020",
+          "nome": "GABRIEL DE MOURA E SOUZA",
+          "interveniente_id": "150005",
+          "nosso_numero": "2569",
+          "descricao": "Aberto",
+          "data_emissao": "25\/06\/2020",
+          "data_vencimento": "26\/06\/2020",
+          "data_vencimento_original": "02\/07\/2020",
+          "data_pagamento": "26\/06\/2020",
+          "valor": "100,00",
+          "codigo": "237",
+          "DT_RowId": "5129",
+"discriminacao": [
+            {
+              "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "1bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "23ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            },
+            {
+              "id": "41bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+              "title": "Produto",
+              "value": 1000
+            },
+            {
+              "id": "123ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+              "title": "Desconto",
+              "value": -520
+            },
+            {
+              "id": "2358694a0f-3da1-471f-bd96-145571e29d72",
+              "title": "Acréscimo",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    }   ]
 }

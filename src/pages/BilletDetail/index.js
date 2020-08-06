@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { AntDesign } from '@expo/vector-icons';
 import Background from '../../components/Background';
 import {
   Container,
@@ -11,9 +13,11 @@ import {
   Flat,
   ItemList,
   FilterList,
+  Backbutton,
 } from './styles';
 
 export default function BilletDetail({ route }) {
+  const navigation = useNavigation();
   const { data: billetData } = route.params;
   const [billetDetails, setBilletDetails] = useState([]);
   useEffect(() => {
@@ -56,6 +60,13 @@ export default function BilletDetail({ route }) {
     <>
       <Background>
         <Container>
+          <Backbutton
+            onPress={() => {
+              navigation.goBack();
+            }}
+          >
+            <AntDesign name="arrowleft" size={24} color="#FFF" />
+          </Backbutton>
           <Value>
             R$
             {' '}
@@ -83,7 +94,10 @@ export default function BilletDetail({ route }) {
             data={DATA2}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => <TextInfo>{item.title}</TextInfo>}
+            centerContent
             onScroll={handleScroll}
+            decelerationRate={0}
+            contentContainerStyle={{ margin: 0 }}
           />
         </Flat>
 

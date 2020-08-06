@@ -85,15 +85,21 @@ export const VehicleContainer = styled.View`
   border-radius: 12px;
   width: 100%;
 
-  ${(props) => props.situation === 'ativo' && css`
+  ${(props) => props.situation === '1' && css`
     border-color: #7ED897; 
     `
 }
 
-${(props) => props.situation === 'inativo' && css`
+${(props) => props.situation === '2' && css`
     border-color: #c53030; 
     `
 }
+
+${(props) => props.situation > 2 && css`
+    border-color: #B2B7B3; 
+    `
+}
+
 `;
 
 export const ImageView = styled.View`

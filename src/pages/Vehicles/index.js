@@ -4,6 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { Platform } from 'react-native';
 import carImage from '../../assets/vehicle/car1.png';
+import api from '../../services/fakeApi';
 import {
   VehiclesList,
   Content,
@@ -28,77 +29,43 @@ import Status from '../../components/Status';
 
 function Vehicles() {
   const navigation = useNavigation();
+  const [vehicleData, setVehicleData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(true);
+  const [pageLoading, sePageLoading] = useState(true);
+  const [page, setPage] = useState(0);
+
+  const [total, setTotal] = useState(0);
+
+  async function loadVehicle() {
+    if (loading) {
+      return;
+    }
+    if (total > 0 && vehicleData.length === total) {
+      return;
+    }
+    setLoading(true);
+
+    const response = await api.get('area_veiculo');
+    const { recordsTotal, data } = response.data[0];
+    setTotal(recordsTotal);
+    setVehicleData(page > 1 ? data.slice(0, (page + 1) * 5) : data.slice(0, 5));
+    setPage(page + 1);
+    sePageLoading(false);
+    setRefreshing(false);
+    setLoading(false);
+  }
 
   const [search, setsearch] = useState('');
-  const DATA = [
-    {
-      id: '1',
-      placa: 'EDY0598',
-      cliente: 'Gabriel',
-      rastreador: '43453241',
-      situacao: 'ativo',
-    },
 
-    {
-      id: '2',
-      placa: 'SAL9997',
-      cliente: 'Jonatas',
-      rastreador: '0077788995',
-      situacao: 'inativo',
-    },
-    {
-      id: '3',
-      placa: 'FALC1578',
-      cliente: 'Gabriel',
-      rastreador: '007778898',
-      situacao: 'ativo',
-    },
-
-    {
-      id: '4',
-      placa: 'GIL0123',
-      cliente: 'Jonatas',
-      rastreador: '0077788995',
-      situacao: 'ativo',
-    },
-    {
-      id: '5',
-      placa: 'PAL7894',
-      cliente: 'Palmito',
-      rastreador: '43453241',
-      situacao: 'inativo',
-    },
-
-    {
-      id: '6',
-      placa: 'PED0128',
-      cliente: 'Pedrao',
-      rastreador: '0077788995',
-      situacao: 'inativo',
-    },
-    {
-      id: '7',
-      placa: 'MENO1478',
-      cliente: 'Gabriel',
-      rastreador: '1237810',
-      situacao: 'ativo',
-    },
-
-    {
-      id: '8',
-      placa: 'FOR01348',
-      cliente: 'Formiga',
-      rastreador: '456792',
-      situacao: 'inativo',
-    },
-  ];
   function selection() {
-    return (DATA.filter((text) => (
+    return (vehicleData.filter((text) => (
       text.cliente.toLowerCase().match(search.toLowerCase()))
       || text.placa.toLowerCase().match(search.toLowerCase())));
   }
   useEffect(() => {
     selection();
+    loadVehicle();
   }, []);
   return (
     <>
@@ -133,9 +100,10 @@ function Vehicles() {
             </Search>
 
             <VehiclesList
+              keyExtractor={(item) => item.rastreador_veiculo_id}
               data={selection()}
               renderItem={({ item }) => (
-                <VehicleContainer situation={item.situacao}>
+                <VehicleContainer situation={item.situacao_id}>
                   <ImageView>
                     <VehicleImage source={carImage} />
                   </ImageView>
@@ -149,13 +117,15 @@ function Vehicles() {
                     <Tracker>
                       Rastreador:
                       {' '}
-                      {item.rastreador}
+                      {item.numero_equipamento}
                     </Tracker>
                   </VehicleInfo>
                 </VehicleContainer>
               )}
               vertical
               showsVerticalScrollIndicator={false}
+              onEndReachedThreshold={0.2}
+              onEndReached={loadVehicle}
             />
           </Content>
         </Keyboard>

@@ -5,6 +5,7 @@ export const Container = styled.View`
   background: #3377B6;
   top: 0;
   height: 30%;
+  flex-direction: row;
 `;
 
 export const Value = styled.Text`
@@ -30,6 +31,15 @@ export const List = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const Backbutton = styled.TouchableOpacity`
+  position: absolute;
+  bottom:0;
+  top:20%;
+  left: 9%;
+  /* color: #FFF; */
+  /* font-size: 50px; */
 `;
 
 export const TextList = styled.Text`
