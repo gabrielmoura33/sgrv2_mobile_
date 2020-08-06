@@ -66,7 +66,7 @@ function Dashboard() {
 
     setLoading(true);
 
-    const response = await api.get('http://192.168.0.85:3333/area_payments_cartao');
+    const response = await api.get('/area_payments_cartao');
     const { recordsTotal, data } = response.data[0];
     setTotal(recordsTotal);
     setCreditCardData(pageCreditCard > 1 ? data.slice(0, (pageCreditCard + 1) * 5) : data.slice(0, 5));

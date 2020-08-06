@@ -3,7 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { lighten, darken } from 'polished';
-import { useNavigation } from '@react-navigation/native';
 
 /*
  * Pages
@@ -13,6 +12,7 @@ import Dashboard from './pages/Dashboard';
 import Billet from './pages/BilletDetail';
 import HinovaPayments from './pages/HinovaPayments';
 import Vehicles from './pages/Vehicles';
+import Contracts from './pages/Contracts';
 
 /*
  * Components
@@ -60,7 +60,7 @@ function TabNavigator() {
       />
       <Tab.Screen
         name="Termos"
-        component={Dashboard}
+        component={Contracts}
         options={{
           tabBarLabel: 'Termos',
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="file-document-edit-outline" size={36} color={color} />,
