@@ -6,6 +6,8 @@
       "recordsTotal": 1,
       "recordsFiltered": 1,
       "data": [
+        { "bandeira_cartao_id": "2", "cliente_cpf": "11606499602", "cliente_id": "150005", "cliente_nome": "GABRIEL DE MOURA E SOUZA", "created_at": "2020-06-08 15:38:23", "data_cadastro": null, "hash": "card_ckb6u97rb02q6rt5x2943gcht", "id": "168", "numero_final": "3931", "padrao": "S", "portador_cpf": "11606499602", "portador_nome": "NOME TESTE", "portador_telefone": "31885487788", "situacao_id": "1", "status": "Cartão cadastrado com sucesso", "status_codigo": "1", "updated_at": "2020-06-08 15:38:24"},
+        { "bandeira_cartao_id": "2", "cliente_cpf": "11606499602", "cliente_id": "150005", "cliente_nome": "GABRIEL DE MOURA E SOUZA", "created_at": "2020-06-08 15:38:23", "data_cadastro": null, "hash": "card_ckb6u97rb02q6rt5x2943gcht", "id": "168", "numero_final": "3931", "padrao": "S", "portador_cpf": "11606499602", "portador_nome": "NOME TESTE", "portador_telefone": "31885487788", "situacao_id": "1", "status": "Cartão cadastrado com sucesso", "status_codigo": "1", "updated_at": "2020-06-08 15:38:24"},
         { "bandeira_cartao_id": "2", "cliente_cpf": "11606499602", "cliente_id": "150005", "cliente_nome": "GABRIEL DE MOURA E SOUZA", "created_at": "2020-06-08 15:38:23", "data_cadastro": null, "hash": "card_ckb6u97rb02q6rt5x2943gcht", "id": "168", "numero_final": "3931", "padrao": "S", "portador_cpf": "11606499602", "portador_nome": "NOME TESTE", "portador_telefone": "31885487788", "situacao_id": "1", "status": "Cartão cadastrado com sucesso", "status_codigo": "1", "updated_at": "2020-06-08 15:38:24"}
       ]
     }

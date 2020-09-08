@@ -16,17 +16,27 @@ import {
   CreditCardList,
   LoadingContainer,
   Loading,
+  MenuList,
+  Title,
 } from './styles';
 
 // Components
 import Card from '../../components/Card';
+import CardMenu from '../../components/CardMenu';
 import AuthenticatedBackground from '../../components/AuthenticadedBackground';
+import Modal from '../../components/Modal';
 // Assets
 import logoSrc from '../../assets/logo-cor.png';
 import loadingSrc from '../../assets/logo.gif';
+import vehicleSrc from '../../../assets/vehicle.png';
+import termoSrc from '../../../assets/termo.png';
+import paymentsSrc from '../../../assets/payments.png';
+import gpsSrc from '../../../assets/gps.png';
+import exitSrc from '../../../assets/exit.png';
 
 function Dashboard() {
   const [billetData, setBilletData] = useState([]);
+
   const [creditCardData, setCreditCardData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(true);
@@ -35,6 +45,45 @@ function Dashboard() {
   const [pageCreditCard, setPageCreditCard] = useState(0);
 
   const [total, setTotal] = useState(0);
+
+  const menu = [
+    {
+      id: '3',
+      title: 'RASTREAMENTO',
+      img: gpsSrc,
+      from: 'Dashboard',
+    },
+    {
+      id: '1',
+      title: 'TERMOS',
+      img: termoSrc,
+      from: 'Termos',
+    },
+    {
+      id: '12',
+      title: 'VEÍCULOS',
+      img: vehicleSrc,
+      from: 'Vehicles',
+    },
+    {
+      id: '13',
+      title: 'PAYMENTS',
+      img: paymentsSrc,
+      from: 'Payments',
+    },
+    {
+      id: '14',
+      title: '',
+      img: null,
+      from: 'Dashboard',
+    },
+    {
+      id: '15',
+      title: 'Saída',
+      img: exitSrc,
+      from: 'logout',
+    },
+  ];
 
   async function loadBillet() {
     if (loading) {
@@ -69,7 +118,8 @@ function Dashboard() {
     const response = await api.get('/area_payments_cartao');
     const { recordsTotal, data } = response.data[0];
     setTotal(recordsTotal);
-    setCreditCardData(pageCreditCard > 1 ? data.slice(0, (pageCreditCard + 1) * 5) : data.slice(0, 5));
+    setCreditCardData(pageCreditCard > 1 ? data.slice(0, (pageCreditCard + 1) * 5)
+      : data.slice(0, 5));
     setPageCreditCard(page + 1);
     setRefreshing(false);
     setLoading(false);
@@ -88,6 +138,12 @@ function Dashboard() {
   function renderBillet({ item: billet }) {
     return (
       <Card card={billet} />
+    );
+  }
+
+  function renderMenu({ item: menu }) {
+    return (
+      <CardMenu menu={menu} />
     );
   }
 
@@ -112,6 +168,7 @@ function Dashboard() {
     );
   }
   return (
+
     <AuthenticatedBackground>
       {pageLoading ? (
         <LoadingContainer>
@@ -120,11 +177,38 @@ function Dashboard() {
 
       ) : (
         <Container>
-          <LogoContainer>
-            <Logo source={logoSrc} />
-          </LogoContainer>
+          <Modal content={(
+            <LogoContainer>
+              <Logo source={logoSrc} />
+            </LogoContainer>
+          )}
+          />
+
+          <ClientName>Gabriel de Moura e Souza</ClientName>
+          <MenuList
+            data={menu}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={(item) => item.id}
+            renderItem={renderMenu}
+            centerContent
+            decelerationRate={0}
+            contentContainerStyle={{ margin: 0 }}
+          />
+
+          <Title>Hinova Payments</Title>
+          <BackgroundContainer>
+            <CreditCardContainer>
+              <CreditCardList
+                data={creditCardData}
+                keyExtractor={(item) => item.id}
+                horizontal
+                renderItem={renderCreditCard}
+              />
+            </CreditCardContainer>
+          </BackgroundContainer>
+
+          <Title>Boletos em aberto</Title>
           <ContentContainer>
-            <ClientName>Gabriel de Moura e Souza</ClientName>
             <BilletList
               data={billetData}
               keyExtractor={(item) => item.id}
@@ -137,14 +221,6 @@ function Dashboard() {
               onRefresh={handleRefresh}
             />
           </ContentContainer>
-          <BackgroundContainer />
-          <CreditCardContainer />
-          <CreditCardList
-            data={creditCardData}
-            keyExtractor={(item) => item.id}
-            horizontal
-            renderItem={renderCreditCard}
-          />
         </Container>
       )}
     </AuthenticatedBackground>
