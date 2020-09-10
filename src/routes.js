@@ -13,6 +13,7 @@ import Billet from './pages/BilletDetail';
 import HinovaPayments from './pages/HinovaPayments';
 import Vehicles from './pages/Vehicles';
 import Contracts from './pages/Contracts';
+import Maps from './pages/Maps';
 
 /*
  * Components
@@ -86,6 +87,8 @@ export default function Routes(isSigned = false) {
       <Stack.Screen name="Vehicles" component={Vehicles} />
 
       <Stack.Screen name="Billet" component={Billet} />
+
+      <Stack.Screen name="Maps" component={Maps} />
 
     </Stack.Navigator>
 

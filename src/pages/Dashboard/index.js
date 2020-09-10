@@ -51,7 +51,7 @@ function Dashboard() {
       id: '3',
       title: 'RASTREAMENTO',
       img: gpsSrc,
-      from: 'Dashboard',
+      from: 'Maps',
     },
     {
       id: '1',

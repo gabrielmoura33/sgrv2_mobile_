@@ -18,6 +18,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       'warn',
       { extensions: ['.jsx', '.js'] },
